@@ -1,23 +1,23 @@
 <template>
-  <div id="app">
-    <div class="header-bar">
-      <div class="header-content">
-        <h1>My Pokédex</h1>
-        <div id="nav">
-          <router-link to="/">Home</router-link>
-          <router-link to="/about">About</router-link>
-        </div>
+<div id="app">
+  <div class="header-bar">
+    <div class="header-content">
+      <h1>My Pokédex</h1>
+      <div id="nav">
+        <router-link to="/">Home</router-link>
+        <router-link to="/about">About</router-link>
       </div>
     </div>
-    <div class="content">
-      <router-view />
-    </div>
-    <div class="footer">
-      <p>
-        <a href="https://github.com/cpartington/my-pokedex" target="blank">Github Repository</a>
-      </p>
-    </div>
   </div>
+  <div class="content">
+    <router-view />
+  </div>
+  <div class="footer">
+    <p>
+      <a href="https://github.com/cpartington/my-pokedex" target="blank">Github Repository</a>
+    </p>
+  </div>
+</div>
 </template>
 
 <style>
@@ -104,8 +104,7 @@ a:hover {
 }
 
 /* Mobile */
-@media only screen and (max-width: 450px) {
-}
+@media only screen and (max-width: 450px) {}
 
 /* Desktop */
 @media only screen and (min-width: 451px) {
