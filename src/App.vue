@@ -24,7 +24,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  font-family: Roboto, sans-serif;
+  font-family: 'Lato', 'Roboto', sans-serif;
   font-size: 16px;
   color: #414141;
 }
@@ -32,7 +32,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: Spectral, serif;
+  font-family: 'Spectral', serif;
 }
 
 a {
