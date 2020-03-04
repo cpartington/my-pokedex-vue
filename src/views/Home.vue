@@ -75,7 +75,17 @@ export default {
   height: 100%;
 }
 
-.card-image {
-  width: 200px;
+/* Mobile */
+@media only screen and (max-width: 450px) {
+  .card-image {
+    width: 100px;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 451px) {
+  .card-image {
+    width: 200px;
+  }
 }
 </style>

@@ -4,7 +4,7 @@
     <div class="header-content">
       <h1>My Pokédex</h1>
       <div id="nav">
-        <router-link to="/">Home</router-link>
+        <router-link to="/">Home</router-link> |
         <router-link to="/about">About</router-link>
       </div>
     </div>
@@ -77,12 +77,13 @@ a:hover {
 }
 
 #nav a.router-link-exact-active {
-  color: #d19192;
+  color: #cf6264;
+  /* color: #d19192; */
 }
 
-#nav a:not(:last-child) {
+/* #nav a:not(:last-child) {
   margin-right: 1em;
-}
+} */
 
 .content {
   margin: 10px;
@@ -115,7 +116,12 @@ a:hover {
 }
 
 /* Mobile */
-@media only screen and (max-width: 450px) {}
+@media only screen and (max-width: 450px) {
+  .header-bar {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 
 /* Desktop */
 @media only screen and (min-width: 451px) {
