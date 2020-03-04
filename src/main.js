@@ -24,7 +24,7 @@ function data() {
         "ss_id": 46,
         "id": 835,
         "galarian": true,
-        "caught": true
+        "caught": false
       },
       {
         "name": "Oddish",

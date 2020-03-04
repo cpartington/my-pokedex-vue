@@ -21,10 +21,13 @@
 </template>
 
 <style>
-body {
+* {
   margin: 0px;
   padding: 0px;
-  font-family: 'Lato', 'Roboto', sans-serif;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
   font-size: 16px;
   color: #414141;
 }
@@ -33,6 +36,7 @@ h1,
 h2,
 h3 {
   font-family: 'Spectral', serif;
+  font-weight: normal;
 }
 
 a {
@@ -51,7 +55,7 @@ a:hover {
 
 .header-bar {
   background: lightsteelblue;
-  padding: 10px 100px;
+  padding: 1.25em 0;
 }
 
 .header-content {
@@ -63,11 +67,8 @@ a:hover {
 }
 
 .header-content h1 {
-  font-size: 2.5em;
-}
-
-#nav {
-  padding: 30px;
+  font-style: italic;
+  font-weight: 600;
 }
 
 #nav a {
@@ -87,6 +88,15 @@ a:hover {
   margin: 10px;
 }
 
+.page-title {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 800;
+  font-style: italic;
+  margin-top: 1.25em;
+  margin-bottom: 0.5em;
+}
+
 /* Footer */
 .footer {
   background-color: lightsteelblue;
@@ -99,7 +109,8 @@ a:hover {
 }
 
 .footer p {
-  font-size: 0.8em;
+  font-size: 0.9em;
+  font-family: 'Spectral', serif;
   margin: 0;
 }
 
