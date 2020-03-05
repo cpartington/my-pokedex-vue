@@ -1,6 +1,6 @@
 <template>
   <label class="container">Caught
-    <input class="checkbox" type="checkbox" :checked="caught"/>
+    <input class="checkbox" type="checkbox" :checked="caught" v-on:change="$emit('change')"/>
     <span class="checkmark"></span>
   </label>
 </template>

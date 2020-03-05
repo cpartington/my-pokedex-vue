@@ -148,6 +148,9 @@ function data() {
     ],
     getPokemon() {
       return this.pokemon_list;
+    },
+    updateCaughtStatus(id) {
+      this.pokemon_list[id].caught = !this.pokemon_list[id].caught;
     }
   }
 }

@@ -2,7 +2,7 @@
 <div class="home">
   <h1 class="page-title">The Master List</h1>
 
-  <div v-for="pokémon in pokemonList" v-bind:key="pokémon.ss_id">
+  <div v-for="(pokémon, index) in pokemonList" :key="pokémon.ss_id">
     <div class="card">    
       
       <div class="card-content">  
@@ -11,7 +11,7 @@
           <p class="card-title">{{ pokémon.name }}</p>
         </div>
         <div class="card-text">
-          <checkbox :caught="pokémon.caught"></checkbox>
+          <checkbox :caught="pokémon.caught" v-on:change="updateCaught(index)"></checkbox>
         </div>
       </div>
       
@@ -36,6 +36,11 @@ export default {
   computed: {
     pokemonList() {
       return this.$root.$data.getPokemon();
+    }
+  },
+  methods: {
+    updateCaught(id) {
+      this.$root.$data.updateCaughtStatus(id);
     }
   }
 };
