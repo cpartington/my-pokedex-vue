@@ -20,5 +20,6 @@ yarn-error.log*
 *.sln
 *.sw?
 
-# Images
-src/assets/pokemon
+# Project stuff
+src/assets/pokémon
+util

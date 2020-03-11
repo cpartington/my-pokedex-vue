@@ -16,7 +16,7 @@
       </div>
       
       <div class="card-image">
-        <img class="card-image" :src="require(`@/assets/pokemon/${pokémon.name.toLowerCase()}.png`)" :alt="pokémon.name"/>
+        <img class="card-image" :src="pokémon.img_src" :alt="pokémon.name"/>
       </div>
     
     </div>
@@ -64,11 +64,12 @@ export default {
 
 .card-number {
   color: #8d8d8d;
+  font-size: 1.1em;
 }
 
 .card-title {
   font-family: 'Spectral', serif;
-  font-size: 1.5em;
+  font-size: 1.75em;
   margin-top: 0.25em;
   font-weight: 600;
 }
