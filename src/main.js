@@ -12,8 +12,25 @@ let data = function () {
     getPokemon() {
       return this.pokemon_list;
     },
+    getPokemonById(id) {
+      return this.pokemon_list[id - 1];
+    },
     updateCaughtStatus(id) {
       this.pokemon_list[id].caught = !this.pokemon_list[id].caught;
+    },
+    getCaughtEvolution(id) {
+      let evolvesToIds = this.getPokemonById(id).evolves_to;
+      console.log(typeof evolvesToIds);
+      
+      if (typeof evolvesToIds === 'number') {
+        if (this.getPokemonById(evolvesToIds).caught)
+          return evolvesToIds;
+      } else {
+        for (const evolveId of evolvesToIds) {
+          if (this.getPokemonById(evolveId).caught)
+            return id;
+        }
+      }
     }
   };
 };

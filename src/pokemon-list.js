@@ -7,7 +7,9 @@ let pokemon_list = [
     "type": [
       "grass"
     ], 
-    "ss_id": 1
+    "ss_id": 1,
+    "evolves_from": null,
+    "evolves_to": 2
   }, 
   {
     "name": "Thwackey", 
@@ -17,7 +19,9 @@ let pokemon_list = [
     "type": [
       "grass"
     ], 
-    "ss_id": 2
+    "ss_id": 2,
+    "evolves_from": 1,
+    "evolves_to": 3
   }, 
   {
     "name": "Rillaboom", 
@@ -27,7 +31,9 @@ let pokemon_list = [
     "type": [
       "grass"
     ], 
-    "ss_id": 3
+    "ss_id": 3,
+    "evolves_from": 2,
+    "evolves_to": null
   }, 
   {
     "name": "Scorbunny", 
@@ -37,7 +43,9 @@ let pokemon_list = [
     "type": [
       "fire"
     ], 
-    "ss_id": 4
+    "ss_id": 4,
+    "evolves_from": null,
+    "evolves_to": 5
   }, 
   {
     "name": "Raboot", 
@@ -47,7 +55,9 @@ let pokemon_list = [
     "type": [
       "fire"
     ], 
-    "ss_id": 5
+    "ss_id": 5,
+    "evolves_from": 4,
+    "evolves_to": 6
   }, 
   {
     "name": "Cinderace", 
@@ -57,7 +67,9 @@ let pokemon_list = [
     "type": [
       "fire"
     ], 
-    "ss_id": 6
+    "ss_id": 6,
+    "evolves_from": 5,
+    "evolves_to": null
   }, 
   {
     "name": "Sobble", 
@@ -67,7 +79,9 @@ let pokemon_list = [
     "type": [
       "water"
     ], 
-    "ss_id": 7
+    "ss_id": 7,
+    "evolves_from": null,
+    "evolves_to": 8
   }, 
   {
     "name": "Drizzile", 
@@ -77,7 +91,9 @@ let pokemon_list = [
     "type": [
       "water"
     ], 
-    "ss_id": 8
+    "ss_id": 8,
+    "evolves_from": 7,
+    "evolves_to": 9
   }, 
   {
     "name": "Inteleon", 
@@ -87,7 +103,9 @@ let pokemon_list = [
     "type": [
       "water"
     ], 
-    "ss_id": 9
+    "ss_id": 9,
+    "evolves_from": 8,
+    "evolves_to": null
   }, 
   {
     "name": "Blipbug", 
@@ -97,7 +115,9 @@ let pokemon_list = [
     "type": [
       "bug"
     ], 
-    "ss_id": 10
+    "ss_id": 10,
+    "evolves_from": null,
+    "evolves_to": 11
   }, 
   {
     "name": "Dottler", 
@@ -108,7 +128,9 @@ let pokemon_list = [
       "bug", 
       "psychic"
     ], 
-    "ss_id": 11
+    "ss_id": 11,
+    "evolves_from": 10,
+    "evolves_to": 12
   }, 
   {
     "name": "Orbeetle", 
@@ -119,7 +141,9 @@ let pokemon_list = [
       "bug", 
       "psychic"
     ], 
-    "ss_id": 12
+    "ss_id": 12,
+    "evolves_from": 11,
+    "evolves_to": null
   }, 
   {
     "name": "Caterpie", 
@@ -129,7 +153,9 @@ let pokemon_list = [
     "type": [
       "bug"
     ], 
-    "ss_id": 13
+    "ss_id": 13,
+    "evolves_from": null,
+    "evolves_to": 14
   }, 
   {
     "name": "Metapod", 
@@ -139,7 +165,9 @@ let pokemon_list = [
     "type": [
       "bug"
     ], 
-    "ss_id": 14
+    "ss_id": 14,
+    "evolves_from": 13,
+    "evolves_to": 15
   }, 
   {
     "name": "Butterfree", 
@@ -150,7 +178,9 @@ let pokemon_list = [
       "bug", 
       "flying"
     ], 
-    "ss_id": 15
+    "ss_id": 15,
+    "evolves_from": 14,
+    "evolves_to": null
   }, 
   {
     "name": "Grubbin", 
@@ -160,7 +190,9 @@ let pokemon_list = [
     "type": [
       "bug"
     ], 
-    "ss_id": 16
+    "ss_id": 16,
+    "evolves_from": null,
+    "evolves_to": 17
   }, 
   {
     "name": "Charjabug", 
@@ -171,7 +203,9 @@ let pokemon_list = [
       "bug", 
       "electric"
     ], 
-    "ss_id": 17
+    "ss_id": 17,
+    "evolves_from": 16,
+    "evolves_to": 18
   }, 
   {
     "name": "Vikavolt", 
@@ -182,7 +216,9 @@ let pokemon_list = [
       "bug", 
       "electric"
     ], 
-    "ss_id": 18
+    "ss_id": 18,
+    "evolves_from": 17,
+    "evolves_to": null
   }, 
   {
     "name": "Hoothoot", 
@@ -193,7 +229,9 @@ let pokemon_list = [
       "normal", 
       "flying"
     ], 
-    "ss_id": 19
+    "ss_id": 19,
+    "evolves_from": null,
+    "evolves_to": 20
   }, 
   {
     "name": "Noctowl", 
@@ -204,7 +242,9 @@ let pokemon_list = [
       "normal", 
       "flying"
     ], 
-    "ss_id": 20
+    "ss_id": 20,
+    "evolves_from": 19,
+    "evolves_to": null
   }, 
   {
     "name": "Rookidee", 
@@ -214,7 +254,9 @@ let pokemon_list = [
     "type": [
       "flying"
     ], 
-    "ss_id": 21
+    "ss_id": 21,
+    "evolves_from": null,
+    "evolves_to": 22
   }, 
   {
     "name": "Corvisquire", 
@@ -224,7 +266,9 @@ let pokemon_list = [
     "type": [
       "flying"
     ], 
-    "ss_id": 22
+    "ss_id": 22,
+    "evolves_from": 21,
+    "evolves_to": 23
   }, 
   {
     "name": "Corviknight", 
@@ -235,7 +279,9 @@ let pokemon_list = [
       "flying", 
       "steel"
     ], 
-    "ss_id": 23
+    "ss_id": 23,
+    "evolves_from": 22,
+    "evolves_to": null
   }, 
   {
     "name": "Skowvet", 
@@ -245,7 +291,9 @@ let pokemon_list = [
     "type": [
       "normal"
     ], 
-    "ss_id": 24
+    "ss_id": 24,
+    "evolves_from": null,
+    "evolves_to": 25
   }, 
   {
     "name": "Greedent", 
@@ -255,7 +303,9 @@ let pokemon_list = [
     "type": [
       "normal"
     ], 
-    "ss_id": 25
+    "ss_id": 25,
+    "evolves_from": 24,
+    "evolves_to": null
   }, 
   {
     "name": "Pidove", 
@@ -265,7 +315,9 @@ let pokemon_list = [
     "type": [
       "normal"
     ], 
-    "ss_id": 26
+    "ss_id": 26,
+    "evolves_from": null,
+    "evolves_to": 27
   }, 
   {
     "name": "Tranquill", 
@@ -276,7 +328,9 @@ let pokemon_list = [
       "normal", 
       "flying"
     ], 
-    "ss_id": 27
+    "ss_id": 27,
+    "evolves_from": 26,
+    "evolves_to": 28
   }, 
   {
     "name": "Unfezant", 
@@ -287,7 +341,9 @@ let pokemon_list = [
       "normal", 
       "flying"
     ], 
-    "ss_id": 28
+    "ss_id": 28,
+    "evolves_from": 27,
+    "evolves_to": null
   }, 
   {
     "name": "Nickit", 
@@ -297,7 +353,9 @@ let pokemon_list = [
     "type": [
       "dark"
     ], 
-    "ss_id": 29
+    "ss_id": 29,
+    "evolves_from": null,
+    "evolves_to": 30
   }, 
   {
     "name": "Thievul", 
@@ -307,7 +365,9 @@ let pokemon_list = [
     "type": [
       "dark"
     ], 
-    "ss_id": 30
+    "ss_id": 30,
+    "evolves_from": 29,
+    "evolves_to": null
   }, 
   {
     "name": "Zigzagoon", 
@@ -318,7 +378,9 @@ let pokemon_list = [
       "dark", 
       "normal"
     ], 
-    "ss_id": 31
+    "ss_id": 31,
+    "evolves_from": null,
+    "evolves_to": 32
   }, 
   {
     "name": "Linoone", 
@@ -329,7 +391,9 @@ let pokemon_list = [
       "dark", 
       "normal"
     ], 
-    "ss_id": 32
+    "ss_id": 32,
+    "evolves_from": 31,
+    "evolves_to": 33
   }, 
   {
     "name": "Obstagoon", 
@@ -340,7 +404,9 @@ let pokemon_list = [
       "dark", 
       "normal"
     ], 
-    "ss_id": 33
+    "ss_id": 33,
+    "evolves_from": 32,
+    "evolves_to": null
   }, 
   {
     "name": "Wooloo", 
@@ -350,7 +416,9 @@ let pokemon_list = [
     "type": [
       "normal"
     ], 
-    "ss_id": 34
+    "ss_id": 34,
+    "evolves_from": null,
+    "evolves_to": 35
   }, 
   {
     "name": "Dubwool", 
@@ -360,7 +428,9 @@ let pokemon_list = [
     "type": [
       "normal"
     ], 
-    "ss_id": 35
+    "ss_id": 35,
+    "evolves_from": 34,
+    "evolves_to": null
   }, 
   {
     "name": "Lotad", 
@@ -371,7 +441,9 @@ let pokemon_list = [
       "water", 
       "grass"
     ], 
-    "ss_id": 36
+    "ss_id": 36,
+    "evolves_from": null,
+    "evolves_to": 37
   }, 
   {
     "name": "Lombre", 
@@ -382,7 +454,9 @@ let pokemon_list = [
       "water", 
       "grass"
     ], 
-    "ss_id": 37
+    "ss_id": 37,
+    "evolves_from": 36,
+    "evolves_to": 38
   }, 
   {
     "name": "Ludicolo", 
@@ -393,7 +467,9 @@ let pokemon_list = [
       "water", 
       "grass"
     ], 
-    "ss_id": 38
+    "ss_id": 38,
+    "evolves_from": 37,
+    "evolves_to": null
   }, 
   {
     "name": "Seedot", 
@@ -403,7 +479,9 @@ let pokemon_list = [
     "type": [
       "grass"
     ], 
-    "ss_id": 39
+    "ss_id": 39,
+    "evolves_from": null,
+    "evolves_to": 40
   }, 
   {
     "name": "Nuzleaf", 
@@ -414,7 +492,9 @@ let pokemon_list = [
       "grass", 
       "dark"
     ], 
-    "ss_id": 40
+    "ss_id": 40,
+    "evolves_from": 39,
+    "evolves_to": 41
   }, 
   {
     "name": "Shiftry", 
@@ -425,7 +505,9 @@ let pokemon_list = [
       "grass", 
       "dark"
     ], 
-    "ss_id": 41
+    "ss_id": 41,
+    "evolves_from": 40,
+    "evolves_to": null
   }, 
   {
     "name": "Chewtle", 
@@ -435,7 +517,9 @@ let pokemon_list = [
     "type": [
       "water"
     ], 
-    "ss_id": 42
+    "ss_id": 42,
+    "evolves_from": null,
+    "evolves_to": 43
   }, 
   {
     "name": "Drednaw", 
@@ -446,7 +530,9 @@ let pokemon_list = [
       "water", 
       "rock"
     ], 
-    "ss_id": 43
+    "ss_id": 43,
+    "evolves_from": 42,
+    "evolves_to": null
   }, 
   {
     "name": "Purrloin", 
@@ -456,7 +542,9 @@ let pokemon_list = [
     "type": [
       "dark"
     ], 
-    "ss_id": 44
+    "ss_id": 44,
+    "evolves_from": null,
+    "evolves_to": 45
   }, 
   {
     "name": "Liepard", 
@@ -466,7 +554,9 @@ let pokemon_list = [
     "type": [
       "dark"
     ], 
-    "ss_id": 45
+    "ss_id": 45,
+    "evolves_from": 44,
+    "evolves_to": null
   }, 
   {
     "name": "Yamper", 
@@ -476,7 +566,9 @@ let pokemon_list = [
     "type": [
       "electric"
     ], 
-    "ss_id": 46
+    "ss_id": 46,
+    "evolves_from": null,
+    "evolves_to": 47
   }, 
   {
     "name": "Botlund", 
@@ -486,7 +578,9 @@ let pokemon_list = [
     "type": [
       "electric"
     ], 
-    "ss_id": 47
+    "ss_id": 47,
+    "evolves_from": 46,
+    "evolves_to": null
   }, 
   {
     "name": "Bunnelby", 
@@ -496,7 +590,9 @@ let pokemon_list = [
     "type": [
       "normal"
     ], 
-    "ss_id": 48
+    "ss_id": 48,
+    "evolves_from": null,
+    "evolves_to": 49
   }, 
   {
     "name": "Diggersby", 
@@ -507,7 +603,9 @@ let pokemon_list = [
       "normal", 
       "ground"
     ], 
-    "ss_id": 49
+    "ss_id": 49,
+    "evolves_from": 48,
+    "evolves_to": null
   }, 
   {
     "name": "Minccino", 
@@ -517,7 +615,9 @@ let pokemon_list = [
     "type": [
       "normal"
     ], 
-    "ss_id": 50
+    "ss_id": 50,
+    "evolves_from": null,
+    "evolves_to": 51
   }, 
   {
     "name": "Cinccino", 
@@ -527,7 +627,9 @@ let pokemon_list = [
     "type": [
       "normal"
     ], 
-    "ss_id": 51
+    "ss_id": 51,
+    "evolves_from": 50,
+    "evolves_to": null
   }, 
   {
     "name": "Bounsweet", 
@@ -537,7 +639,9 @@ let pokemon_list = [
     "type": [
       "grass"
     ], 
-    "ss_id": 52
+    "ss_id": 52,
+    "evolves_from": null,
+    "evolves_to": 53
   }, 
   {
     "name": "Steenee", 
@@ -547,7 +651,9 @@ let pokemon_list = [
     "type": [
       "grass"
     ], 
-    "ss_id": 53
+    "ss_id": 53,
+    "evolves_from": 52,
+    "evolves_to": 54
   }, 
   {
     "name": "Tsareena", 
@@ -557,7 +663,9 @@ let pokemon_list = [
     "type": [
       "grass"
     ], 
-    "ss_id": 54
+    "ss_id": 54,
+    "evolves_from": 53,
+    "evolves_to": null
   }, 
   {
     "name": "Oddish", 
@@ -568,7 +676,9 @@ let pokemon_list = [
       "grass", 
       "poison"
     ], 
-    "ss_id": 55
+    "ss_id": 55,
+    "evolves_from": null,
+    "evolves_to": 56
   }, 
   {
     "name": "Gloom", 
@@ -579,7 +689,9 @@ let pokemon_list = [
       "grass", 
       "poison"
     ], 
-    "ss_id": 56
+    "ss_id": 56,
+    "evolves_from": 55,
+    "evolves_to": [57, 58]
   }, 
   {
     "name": "Vileplume", 
@@ -590,7 +702,9 @@ let pokemon_list = [
       "grass", 
       "poison"
     ], 
-    "ss_id": 57
+    "ss_id": 57,
+    "evolves_from": 56,
+    "evolves_to": null
   }, 
   {
     "name": "Bellossom", 
@@ -600,7 +714,9 @@ let pokemon_list = [
     "type": [
       "grass"
     ], 
-    "ss_id": 58
+    "ss_id": 58,
+    "evolves_from": 56,
+    "evolves_to": null
   }, 
   {
     "name": "Budew", 
@@ -611,7 +727,9 @@ let pokemon_list = [
       "grass", 
       "poison"
     ], 
-    "ss_id": 59
+    "ss_id": 59,
+    "evolves_from": null,
+    "evolves_to": 60
   }, 
   {
     "name": "Roselia", 
@@ -622,7 +740,9 @@ let pokemon_list = [
       "grass", 
       "poison"
     ], 
-    "ss_id": 60
+    "ss_id": 60,
+    "evolves_from": 59,
+    "evolves_to": 61
   }, 
   {
     "name": "Roserade", 
@@ -633,7 +753,9 @@ let pokemon_list = [
       "grass", 
       "poison"
     ], 
-    "ss_id": 61
+    "ss_id": 61,
+    "evolves_from": 60,
+    "evolves_to": null
   }, 
   {
     "name": "Wingull", 
@@ -644,7 +766,9 @@ let pokemon_list = [
       "water", 
       "flying"
     ], 
-    "ss_id": 62
+    "ss_id": 62,
+    "evolves_from": null,
+    "evolves_to": 63
   }, 
   {
     "name": "Pelipper", 
@@ -655,7 +779,9 @@ let pokemon_list = [
       "water", 
       "flying"
     ], 
-    "ss_id": 63
+    "ss_id": 63,
+    "evolves_from": 62,
+    "evolves_to": null
   }, 
   {
     "name": "Joltik", 
@@ -666,7 +792,9 @@ let pokemon_list = [
       "bug", 
       "electric"
     ], 
-    "ss_id": 64
+    "ss_id": 64,
+    "evolves_from": null,
+    "evolves_to": 65
   }, 
   {
     "name": "Galvantula", 
@@ -677,7 +805,9 @@ let pokemon_list = [
       "bug", 
       "electric"
     ], 
-    "ss_id": 65
+    "ss_id": 65,
+    "evolves_from": 64,
+    "evolves_to": null
   }, 
   {
     "name": "Electrike", 
@@ -687,7 +817,9 @@ let pokemon_list = [
     "type": [
       "electric"
     ], 
-    "ss_id": 66
+    "ss_id": 66,
+    "evolves_from": null,
+    "evolves_to": 67
   }, 
   {
     "name": "Manectric", 
@@ -697,7 +829,9 @@ let pokemon_list = [
     "type": [
       "electric"
     ], 
-    "ss_id": 67
+    "ss_id": 67,
+    "evolves_from": 66,
+    "evolves_to": null
   }, 
   {
     "name": "Vulpix", 
@@ -707,7 +841,9 @@ let pokemon_list = [
     "type": [
       "fire"
     ], 
-    "ss_id": 68
+    "ss_id": 68,
+    "evolves_from": null,
+    "evolves_to": 69
   }, 
   {
     "name": "Ninetales", 
@@ -717,7 +853,9 @@ let pokemon_list = [
     "type": [
       "fire"
     ], 
-    "ss_id": 69
+    "ss_id": 69,
+    "evolves_from": 68,
+    "evolves_to": null
   }, 
   {
     "name": "Growlithe", 
@@ -727,7 +865,9 @@ let pokemon_list = [
     "type": [
       "fire"
     ], 
-    "ss_id": 70
+    "ss_id": 70,
+    "evolves_from": null,
+    "evolves_to": 71
   }, 
   {
     "name": "Arcanine", 
@@ -737,7 +877,9 @@ let pokemon_list = [
     "type": [
       "fire"
     ], 
-    "ss_id": 71
+    "ss_id": 71,
+    "evolves_from": 70,
+    "evolves_to": null
   }, 
   {
     "name": "Vanillite", 
@@ -747,7 +889,9 @@ let pokemon_list = [
     "type": [
       "ice"
     ], 
-    "ss_id": 72
+    "ss_id": 72,
+    "evolves_from": null,
+    "evolves_to": 73
   }, 
   {
     "name": "Vanillish", 
@@ -757,7 +901,9 @@ let pokemon_list = [
     "type": [
       "ice"
     ], 
-    "ss_id": 73
+    "ss_id": 73,
+    "evolves_from": 72,
+    "evolves_to": 74
   }, 
   {
     "name": "Vanilluxe", 
@@ -767,7 +913,9 @@ let pokemon_list = [
     "type": [
       "ice"
     ], 
-    "ss_id": 74
+    "ss_id": 74,
+    "evolves_from": 73,
+    "evolves_to": null
   }, 
   {
     "name": "Swinub", 
@@ -778,7 +926,9 @@ let pokemon_list = [
       "ice", 
       "ground"
     ], 
-    "ss_id": 75
+    "ss_id": 75,
+    "evolves_from": null,
+    "evolves_to": 76
   }, 
   {
     "name": "Piloswine", 
@@ -789,7 +939,9 @@ let pokemon_list = [
       "ice", 
       "ground"
     ], 
-    "ss_id": 76
+    "ss_id": 76,
+    "evolves_from": 75,
+    "evolves_to": 77
   }, 
   {
     "name": "Mamoswine", 
@@ -800,7 +952,9 @@ let pokemon_list = [
       "ice", 
       "ground"
     ], 
-    "ss_id": 77
+    "ss_id": 77,
+    "evolves_from": 76,
+    "evolves_to": null
   }, 
   {
     "name": "Delibird", 
@@ -811,7 +965,9 @@ let pokemon_list = [
       "ice", 
       "flying"
     ], 
-    "ss_id": 78
+    "ss_id": 78,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Snorunt", 
@@ -821,7 +977,9 @@ let pokemon_list = [
     "type": [
       "ice"
     ], 
-    "ss_id": 79
+    "ss_id": 79,
+    "evolves_from": null,
+    "evolves_to": [80, 81]
   }, 
   {
     "name": "Glalie", 
@@ -831,7 +989,9 @@ let pokemon_list = [
     "type": [
       "ice"
     ], 
-    "ss_id": 80
+    "ss_id": 80,
+    "evolves_from": 79,
+    "evolves_to": null
   }, 
   {
     "name": "Froslass", 
@@ -842,7 +1002,9 @@ let pokemon_list = [
       "ice", 
       "ghost"
     ], 
-    "ss_id": 81
+    "ss_id": 81,
+    "evolves_from": 79,
+    "evolves_to": null
   }, 
   {
     "name": "Baltoy", 
@@ -853,7 +1015,9 @@ let pokemon_list = [
       "ground", 
       "psychic"
     ], 
-    "ss_id": 82
+    "ss_id": 82,
+    "evolves_from": null,
+    "evolves_to": 83
   }, 
   {
     "name": "Claydol", 
@@ -864,7 +1028,9 @@ let pokemon_list = [
       "ground", 
       "psychic"
     ], 
-    "ss_id": 83
+    "ss_id": 83,
+    "evolves_from": 82,
+    "evolves_to": null
   }, 
   {
     "name": "Mudbray", 
@@ -874,7 +1040,9 @@ let pokemon_list = [
     "type": [
       "ground"
     ], 
-    "ss_id": 84
+    "ss_id": 84,
+    "evolves_from": null,
+    "evolves_to": 85
   }, 
   {
     "name": "Mudsdale", 
@@ -884,7 +1052,9 @@ let pokemon_list = [
     "type": [
       "ground"
     ], 
-    "ss_id": 85
+    "ss_id": 85,
+    "evolves_from": 84,
+    "evolves_to": null
   }, 
   {
     "name": "Dwebble", 
@@ -895,7 +1065,9 @@ let pokemon_list = [
       "bug", 
       "rock"
     ], 
-    "ss_id": 86
+    "ss_id": 86,
+    "evolves_from": null,
+    "evolves_to": 87
   }, 
   {
     "name": "Crustle", 
@@ -906,7 +1078,9 @@ let pokemon_list = [
       "bug", 
       "rock"
     ], 
-    "ss_id": 87
+    "ss_id": 87,
+    "evolves_from": 86,
+    "evolves_to": null
   }, 
   {
     "name": "Golett", 
@@ -917,7 +1091,9 @@ let pokemon_list = [
       "ground", 
       "ghost"
     ], 
-    "ss_id": 88
+    "ss_id": 88,
+    "evolves_from": null,
+    "evolves_to": 89
   }, 
   {
     "name": "Golurk", 
@@ -928,7 +1104,9 @@ let pokemon_list = [
       "ground", 
       "ghost"
     ], 
-    "ss_id": 89
+    "ss_id": 89,
+    "evolves_from": 88,
+    "evolves_to": null
   }, 
   {
     "name": "Munna", 
@@ -938,7 +1116,9 @@ let pokemon_list = [
     "type": [
       "psychic"
     ], 
-    "ss_id": 90
+    "ss_id": 90,
+    "evolves_from": null,
+    "evolves_to": 91
   }, 
   {
     "name": "Musharna", 
@@ -948,7 +1128,9 @@ let pokemon_list = [
     "type": [
       "psychic"
     ], 
-    "ss_id": 91
+    "ss_id": 91,
+    "evolves_from": 90,
+    "evolves_to": null
   }, 
   {
     "name": "Natu", 
@@ -959,7 +1141,9 @@ let pokemon_list = [
       "psychic", 
       "flying"
     ], 
-    "ss_id": 92
+    "ss_id": 92,
+    "evolves_from": null,
+    "evolves_to": 92
   }, 
   {
     "name": "Xatu", 
@@ -970,7 +1154,9 @@ let pokemon_list = [
       "psychic", 
       "flying"
     ], 
-    "ss_id": 93
+    "ss_id": 93,
+    "evolves_from": 92,
+    "evolves_to": null
   }, 
   {
     "name": "Stufful", 
@@ -981,7 +1167,9 @@ let pokemon_list = [
       "normal", 
       "fighting"
     ], 
-    "ss_id": 94
+    "ss_id": 94,
+    "evolves_from": null,
+    "evolves_to": 95
   }, 
   {
     "name": "Bewear", 
@@ -992,7 +1180,9 @@ let pokemon_list = [
       "normal", 
       "fighting"
     ], 
-    "ss_id": 95
+    "ss_id": 95,
+    "evolves_from": 94,
+    "evolves_to": null
   }, 
   {
     "name": "Snover", 
@@ -1003,7 +1193,9 @@ let pokemon_list = [
       "grass", 
       "ice"
     ], 
-    "ss_id": 96
+    "ss_id": 96,
+    "evolves_from": null,
+    "evolves_to": 97
   }, 
   {
     "name": "Abomasnow", 
@@ -1014,7 +1206,9 @@ let pokemon_list = [
       "grass", 
       "ice"
     ], 
-    "ss_id": 97
+    "ss_id": 97,
+    "evolves_from": 96,
+    "evolves_to": null
   }, 
   {
     "name": "Krabby", 
@@ -1024,7 +1218,9 @@ let pokemon_list = [
     "type": [
       "water"
     ], 
-    "ss_id": 98
+    "ss_id": 98,
+    "evolves_from": null,
+    "evolves_to": 99
   }, 
   {
     "name": "Kingler", 
@@ -1034,7 +1230,9 @@ let pokemon_list = [
     "type": [
       "water"
     ], 
-    "ss_id": 99
+    "ss_id": 99,
+    "evolves_from": 98,
+    "evolves_to": null
   }, 
   {
     "name": "Wooper", 
@@ -1045,7 +1243,9 @@ let pokemon_list = [
       "water", 
       "ground"
     ], 
-    "ss_id": 100
+    "ss_id": 100,
+    "evolves_from": null,
+    "evolves_to": 101
   }, 
   {
     "name": "Quagsire", 
@@ -1056,7 +1256,9 @@ let pokemon_list = [
       "water", 
       "ground"
     ], 
-    "ss_id": 101
+    "ss_id": 101,
+    "evolves_from": 100,
+    "evolves_to": null
   }, 
   {
     "name": "Corphish", 
@@ -1066,7 +1268,9 @@ let pokemon_list = [
     "type": [
       "water"
     ], 
-    "ss_id": 102
+    "ss_id": 102,
+    "evolves_from": null,
+    "evolves_to": 103
   }, 
   {
     "name": "Crawdaunt", 
@@ -1077,7 +1281,9 @@ let pokemon_list = [
       "water", 
       "dark"
     ], 
-    "ss_id": 103
+    "ss_id": 103,
+    "evolves_from": 102,
+    "evolves_to": null
   }, 
   {
     "name": "Nincada", 
@@ -1088,7 +1294,9 @@ let pokemon_list = [
       "bug", 
       "ground"
     ], 
-    "ss_id": 104
+    "ss_id": 104,
+    "evolves_from": null,
+    "evolves_to": [105, 106]
   }, 
   {
     "name": "Ninjask", 
@@ -1099,7 +1307,9 @@ let pokemon_list = [
       "bug", 
       "flying"
     ], 
-    "ss_id": 105
+    "ss_id": 105,
+    "evolves_from": 104,
+    "evolves_to": null
   }, 
   {
     "name": "Shedninja", 
@@ -1110,7 +1320,9 @@ let pokemon_list = [
       "bug", 
       "ghost"
     ], 
-    "ss_id": 106
+    "ss_id": 106,
+    "evolves_from": 104,
+    "evolves_to": null
   }, 
   {
     "name": "Tyrogue", 
@@ -1120,7 +1332,9 @@ let pokemon_list = [
     "type": [
       "fighting"
     ], 
-    "ss_id": 107
+    "ss_id": 107,
+    "evolves_from": null,
+    "evolves_to": [108, 109, 110]
   }, 
   {
     "name": "Hitmonlee", 
@@ -1130,7 +1344,9 @@ let pokemon_list = [
     "type": [
       "fighting"
     ], 
-    "ss_id": 108
+    "ss_id": 108,
+    "evolves_from": 107,
+    "evolves_to": null
   }, 
   {
     "name": "Hitmonchan", 
@@ -1140,7 +1356,9 @@ let pokemon_list = [
     "type": [
       "fighting"
     ], 
-    "ss_id": 109
+    "ss_id": 109,
+    "evolves_from": 107,
+    "evolves_to": null
   }, 
   {
     "name": "Hitmontop", 
@@ -1150,7 +1368,9 @@ let pokemon_list = [
     "type": [
       "fighting"
     ], 
-    "ss_id": 110
+    "ss_id": 110,
+    "evolves_from": 107,
+    "evolves_to": null
   }, 
   {
     "name": "Pancham", 
@@ -1160,7 +1380,9 @@ let pokemon_list = [
     "type": [
       "fighting"
     ], 
-    "ss_id": 111
+    "ss_id": 111,
+    "evolves_from": null,
+    "evolves_to": 112
   }, 
   {
     "name": "Pangoro", 
@@ -1171,7 +1393,9 @@ let pokemon_list = [
       "fighting", 
       "dark"
     ], 
-    "ss_id": 112
+    "ss_id": 112,
+    "evolves_from": 111,
+    "evolves_to": null
   }, 
   {
     "name": "Klink", 
@@ -1181,7 +1405,9 @@ let pokemon_list = [
     "type": [
       "steel"
     ], 
-    "ss_id": 113
+    "ss_id": 113,
+    "evolves_from": null,
+    "evolves_to": 114
   }, 
   {
     "name": "Klang", 
@@ -1191,7 +1417,9 @@ let pokemon_list = [
     "type": [
       "steel"
     ], 
-    "ss_id": 114
+    "ss_id": 114,
+    "evolves_from": 113,
+    "evolves_to": 115
   }, 
   {
     "name": "Klinklang", 
@@ -1201,7 +1429,9 @@ let pokemon_list = [
     "type": [
       "steel"
     ], 
-    "ss_id": 115
+    "ss_id": 115,
+    "evolves_from": 114,
+    "evolves_to": null
   }, 
   {
     "name": "Combee", 
@@ -1212,7 +1442,9 @@ let pokemon_list = [
       "bug", 
       "flying"
     ], 
-    "ss_id": 116
+    "ss_id": 116,
+    "evolves_from": null,
+    "evolves_to": 117
   }, 
   {
     "name": "Vespiquen", 
@@ -1223,7 +1455,9 @@ let pokemon_list = [
       "bug", 
       "flying"
     ], 
-    "ss_id": 117
+    "ss_id": 117,
+    "evolves_from": 116,
+    "evolves_to": null
   }, 
   {
     "name": "Bronzor", 
@@ -1234,7 +1468,9 @@ let pokemon_list = [
       "steel", 
       "psychic"
     ], 
-    "ss_id": 118
+    "ss_id": 118,
+    "evolves_from": null,
+    "evolves_to": 119
   }, 
   {
     "name": "Bronzong", 
@@ -1245,7 +1481,9 @@ let pokemon_list = [
       "steel", 
       "psychic"
     ], 
-    "ss_id": 119
+    "ss_id": 119,
+    "evolves_from": 118,
+    "evolves_to": null
   }, 
   {
     "name": "Ralts", 
@@ -1256,7 +1494,9 @@ let pokemon_list = [
       "psychic", 
       "fairy"
     ], 
-    "ss_id": 120
+    "ss_id": 120,
+    "evolves_from": null,
+    "evolves_to": 121
   }, 
   {
     "name": "Kirlia", 
@@ -1267,7 +1507,9 @@ let pokemon_list = [
       "psychic", 
       "fairy"
     ], 
-    "ss_id": 121
+    "ss_id": 121,
+    "evolves_from": 120,
+    "evolves_to": [122, 123]
   }, 
   {
     "name": "Gardevoir", 
@@ -1278,7 +1520,9 @@ let pokemon_list = [
       "psychic", 
       "fairy"
     ], 
-    "ss_id": 122
+    "ss_id": 122,
+    "evolves_from": 121,
+    "evolves_to": null
   }, 
   {
     "name": "Gallade", 
@@ -1289,7 +1533,9 @@ let pokemon_list = [
       "psychic", 
       "fighting"
     ], 
-    "ss_id": 123
+    "ss_id": 123,
+    "evolves_from": 121,
+    "evolves_to": null
   }, 
   {
     "name": "Drifloon", 
@@ -1300,7 +1546,9 @@ let pokemon_list = [
       "ghost", 
       "flying"
     ], 
-    "ss_id": 124
+    "ss_id": 124,
+    "evolves_from": null,
+    "evolves_to": 125
   }, 
   {
     "name": "Drifblim", 
@@ -1311,7 +1559,9 @@ let pokemon_list = [
       "ghost", 
       "flying"
     ], 
-    "ss_id": 125
+    "ss_id": 125,
+    "evolves_from": 124,
+    "evolves_to": null
   }, 
   {
     "name": "Gossifleur", 
@@ -1321,7 +1571,9 @@ let pokemon_list = [
     "type": [
       "grass"
     ], 
-    "ss_id": 126
+    "ss_id": 126,
+    "evolves_from": null,
+    "evolves_to": 127
   }, 
   {
     "name": "Eldegoss", 
@@ -1331,7 +1583,9 @@ let pokemon_list = [
     "type": [
       "grass"
     ], 
-    "ss_id": 127
+    "ss_id": 127,
+    "evolves_from": 126,
+    "evolves_to": null
   }, 
   {
     "name": "Cherubi", 
@@ -1341,7 +1595,9 @@ let pokemon_list = [
     "type": [
       "grass"
     ], 
-    "ss_id": 128
+    "ss_id": 128,
+    "evolves_from": null,
+    "evolves_to": 129
   }, 
   {
     "name": "Cherrim", 
@@ -1351,7 +1607,9 @@ let pokemon_list = [
     "type": [
       "grass"
     ], 
-    "ss_id": 129
+    "ss_id": 129,
+    "evolves_from": 128,
+    "evolves_to": null
   }, 
   {
     "name": "Stunky", 
@@ -1362,7 +1620,9 @@ let pokemon_list = [
       "poison", 
       "dark"
     ], 
-    "ss_id": 130
+    "ss_id": 130,
+    "evolves_from": null,
+    "evolves_to": 131
   }, 
   {
     "name": "Skuntank", 
@@ -1373,7 +1633,9 @@ let pokemon_list = [
       "poison", 
       "dark"
     ], 
-    "ss_id": 131
+    "ss_id": 131,
+    "evolves_from": 130,
+    "evolves_to": null
   }, 
   {
     "name": "Tympole", 
@@ -1383,7 +1645,9 @@ let pokemon_list = [
     "type": [
       "water"
     ], 
-    "ss_id": 132
+    "ss_id": 132,
+    "evolves_from": null,
+    "evolves_to": 133
   }, 
   {
     "name": "Palpitode", 
@@ -1394,7 +1658,9 @@ let pokemon_list = [
       "water", 
       "ground"
     ], 
-    "ss_id": 133
+    "ss_id": 133,
+    "evolves_from": 132,
+    "evolves_to": 134
   }, 
   {
     "name": "Seismitoad", 
@@ -1405,7 +1671,9 @@ let pokemon_list = [
       "water", 
       "ground"
     ], 
-    "ss_id": 134
+    "ss_id": 134,
+    "evolves_from": 133,
+    "evolves_to": null
   }, 
   {
     "name": "Duskull", 
@@ -1415,7 +1683,9 @@ let pokemon_list = [
     "type": [
       "ghost"
     ], 
-    "ss_id": 135
+    "ss_id": 135,
+    "evolves_from": null,
+    "evolves_to": 136
   }, 
   {
     "name": "Dusclops", 
@@ -1425,7 +1695,9 @@ let pokemon_list = [
     "type": [
       "ghost"
     ], 
-    "ss_id": 136
+    "ss_id": 136,
+    "evolves_from": 135,
+    "evolves_to": 137
   }, 
   {
     "name": "Dusknoir", 
@@ -1435,7 +1707,9 @@ let pokemon_list = [
     "type": [
       "ghost"
     ], 
-    "ss_id": 137
+    "ss_id": 137,
+    "evolves_from": 136,
+    "evolves_to": null
   }, 
   {
     "name": "Machop", 
@@ -1445,7 +1719,9 @@ let pokemon_list = [
     "type": [
       "fighting"
     ], 
-    "ss_id": 138
+    "ss_id": 138,
+    "evolves_from": null,
+    "evolves_to": 139
   }, 
   {
     "name": "Machoke", 
@@ -1455,7 +1731,9 @@ let pokemon_list = [
     "type": [
       "fighting"
     ], 
-    "ss_id": 139
+    "ss_id": 139,
+    "evolves_from": 138,
+    "evolves_to": 140
   }, 
   {
     "name": "Machamp", 
@@ -1465,7 +1743,9 @@ let pokemon_list = [
     "type": [
       "fighting"
     ], 
-    "ss_id": 140
+    "ss_id": 140,
+    "evolves_from": 139,
+    "evolves_to": null
   }, 
   {
     "name": "Gastly", 
@@ -1476,7 +1756,9 @@ let pokemon_list = [
       "ghost", 
       "poison"
     ], 
-    "ss_id": 141
+    "ss_id": 141,
+    "evolves_from": null,
+    "evolves_to": 142
   }, 
   {
     "name": "Haunter", 
@@ -1487,7 +1769,9 @@ let pokemon_list = [
       "ghost", 
       "poison"
     ], 
-    "ss_id": 142
+    "ss_id": 142,
+    "evolves_from": 141,
+    "evolves_to": 143
   }, 
   {
     "name": "Gengar", 
@@ -1498,7 +1782,9 @@ let pokemon_list = [
       "ghost", 
       "poison"
     ], 
-    "ss_id": 143
+    "ss_id": 143,
+    "evolves_from": 142,
+    "evolves_to": null
   }, 
   {
     "name": "Magikarp", 
@@ -1508,7 +1794,9 @@ let pokemon_list = [
     "type": [
       "water"
     ], 
-    "ss_id": 144
+    "ss_id": 144,
+    "evolves_from": null,
+    "evolves_to": 145
   }, 
   {
     "name": "Gyarados", 
@@ -1519,7 +1807,9 @@ let pokemon_list = [
       "water", 
       "flying"
     ], 
-    "ss_id": 145
+    "ss_id": 145,
+    "evolves_from": 144,
+    "evolves_to": null
   }, 
   {
     "name": "Goldeen", 
@@ -1529,7 +1819,9 @@ let pokemon_list = [
     "type": [
       "water"
     ], 
-    "ss_id": 146
+    "ss_id": 146,
+    "evolves_from": null,
+    "evolves_to": 147
   }, 
   {
     "name": "Seaking", 
@@ -1539,7 +1831,9 @@ let pokemon_list = [
     "type": [
       "water"
     ], 
-    "ss_id": 147
+    "ss_id": 147,
+    "evolves_from": 146,
+    "evolves_to": null
   }, 
   {
     "name": "Remoraid", 
@@ -1549,7 +1843,9 @@ let pokemon_list = [
     "type": [
       "water"
     ], 
-    "ss_id": 148
+    "ss_id": 148,
+    "evolves_from": null,
+    "evolves_to": 149
   }, 
   {
     "name": "Octillery", 
@@ -1559,7 +1855,9 @@ let pokemon_list = [
     "type": [
       "water"
     ], 
-    "ss_id": 149
+    "ss_id": 149,
+    "evolves_from": 148,
+    "evolves_to": null
   }, 
   {
     "name": "Shellder", 
@@ -1569,7 +1867,9 @@ let pokemon_list = [
     "type": [
       "water"
     ], 
-    "ss_id": 150
+    "ss_id": 150,
+    "evolves_from": null,
+    "evolves_to": 151
   }, 
   {
     "name": "Cloyster", 
@@ -1580,7 +1880,9 @@ let pokemon_list = [
       "water", 
       "ice"
     ], 
-    "ss_id": 151
+    "ss_id": 151,
+    "evolves_from": 150,
+    "evolves_to": null
   }, 
   {
     "name": "Feebas", 
@@ -1590,7 +1892,9 @@ let pokemon_list = [
     "type": [
       "water"
     ], 
-    "ss_id": 152
+    "ss_id": 152,
+    "evolves_from": null,
+    "evolves_to": 153
   }, 
   {
     "name": "Milotic", 
@@ -1600,7 +1904,9 @@ let pokemon_list = [
     "type": [
       "water"
     ], 
-    "ss_id": 153
+    "ss_id": 153,
+    "evolves_from": 152,
+    "evolves_to": null
   }, 
   {
     "name": "Basculin", 
@@ -1610,7 +1916,9 @@ let pokemon_list = [
     "type": [
       "water"
     ], 
-    "ss_id": 154
+    "ss_id": 154,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Wishiwashi", 
@@ -1620,7 +1928,9 @@ let pokemon_list = [
     "type": [
       "water"
     ], 
-    "ss_id": 155
+    "ss_id": 155,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Pyukumuku", 
@@ -1630,7 +1940,9 @@ let pokemon_list = [
     "type": [
       "water"
     ], 
-    "ss_id": 156
+    "ss_id": 156,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Trubbish", 
@@ -1640,7 +1952,9 @@ let pokemon_list = [
     "type": [
       "poison"
     ], 
-    "ss_id": 157
+    "ss_id": 157,
+    "evolves_from": null,
+    "evolves_to": 158
   }, 
   {
     "name": "Garbodor", 
@@ -1650,7 +1964,9 @@ let pokemon_list = [
     "type": [
       "poison"
     ], 
-    "ss_id": 158
+    "ss_id": 158,
+    "evolves_from": 157,
+    "evolves_to": null
   }, 
   {
     "name": "Sizzlipede", 
@@ -1661,7 +1977,9 @@ let pokemon_list = [
       "fire", 
       "grass"
     ], 
-    "ss_id": 159
+    "ss_id": 159,
+    "evolves_from": null,
+    "evolves_to": 160
   }, 
   {
     "name": "Centiskorch", 
@@ -1672,7 +1990,9 @@ let pokemon_list = [
       "fire", 
       "grass"
     ], 
-    "ss_id": 160
+    "ss_id": 160,
+    "evolves_from": 159,
+    "evolves_to": null
   }, 
   {
     "name": "Rolycoly", 
@@ -1682,7 +2002,9 @@ let pokemon_list = [
     "type": [
       "ground"
     ], 
-    "ss_id": 161
+    "ss_id": 161,
+    "evolves_from": null,
+    "evolves_to": 162
   }, 
   {
     "name": "Carkol", 
@@ -1693,7 +2015,9 @@ let pokemon_list = [
       "rock", 
       "fire"
     ], 
-    "ss_id": 162
+    "ss_id": 162,
+    "evolves_from": 161,
+    "evolves_to": 163
   }, 
   {
     "name": "Coalossal", 
@@ -1704,7 +2028,9 @@ let pokemon_list = [
       "rock", 
       "fire"
     ], 
-    "ss_id": 163
+    "ss_id": 163,
+    "evolves_from": 162,
+    "evolves_to": null
   }, 
   {
     "name": "Diglett", 
@@ -1714,7 +2040,9 @@ let pokemon_list = [
     "type": [
       "diglett"
     ], 
-    "ss_id": 164
+    "ss_id": 164,
+    "evolves_from": null,
+    "evolves_to": 165
   }, 
   {
     "name": "Dugtrio", 
@@ -1724,7 +2052,9 @@ let pokemon_list = [
     "type": [
       "dugtrio"
     ], 
-    "ss_id": 165
+    "ss_id": 165,
+    "evolves_from": 164,
+    "evolves_to": null
   }, 
   {
     "name": "Drilbur", 
@@ -1734,7 +2064,9 @@ let pokemon_list = [
     "type": [
       "ground"
     ], 
-    "ss_id": 166
+    "ss_id": 166,
+    "evolves_from": null,
+    "evolves_to": 167
   }, 
   {
     "name": "Excadrill", 
@@ -1745,7 +2077,9 @@ let pokemon_list = [
       "ground", 
       "steel"
     ], 
-    "ss_id": 167
+    "ss_id": 167,
+    "evolves_from": 166,
+    "evolves_to": null
   }, 
   {
     "name": "Roggenrola", 
@@ -1755,7 +2089,9 @@ let pokemon_list = [
     "type": [
       "rock\ufffd"
     ], 
-    "ss_id": 168
+    "ss_id": 168,
+    "evolves_from": null,
+    "evolves_to": 169
   }, 
   {
     "name": "Boldore", 
@@ -1765,7 +2101,9 @@ let pokemon_list = [
     "type": [
       "rock"
     ], 
-    "ss_id": 169
+    "ss_id": 169,
+    "evolves_from": 168,
+    "evolves_to": 170
   }, 
   {
     "name": "Gigalith", 
@@ -1775,7 +2113,9 @@ let pokemon_list = [
     "type": [
       "rock"
     ], 
-    "ss_id": 170
+    "ss_id": 170,
+    "evolves_from": 169,
+    "evolves_to": null
   }, 
   {
     "name": "Timburr", 
@@ -1785,7 +2125,9 @@ let pokemon_list = [
     "type": [
       "fighting"
     ], 
-    "ss_id": 171
+    "ss_id": 171,
+    "evolves_from": null,
+    "evolves_to": 172
   }, 
   {
     "name": "Gurdurr", 
@@ -1795,7 +2137,9 @@ let pokemon_list = [
     "type": [
       "fighting"
     ], 
-    "ss_id": 172
+    "ss_id": 172,
+    "evolves_from": 171,
+    "evolves_to": 173
   }, 
   {
     "name": "Conkeldurr", 
@@ -1805,7 +2149,9 @@ let pokemon_list = [
     "type": [
       "fighting"
     ], 
-    "ss_id": 173
+    "ss_id": 173,
+    "evolves_from": 172,
+    "evolves_to": null
   }, 
   {
     "name": "Woobat", 
@@ -1816,7 +2162,9 @@ let pokemon_list = [
       "psychic", 
       "flying"
     ], 
-    "ss_id": 174
+    "ss_id": 174,
+    "evolves_from": null,
+    "evolves_to": 175
   }, 
   {
     "name": "Swoobat", 
@@ -1827,7 +2175,9 @@ let pokemon_list = [
       "psychic", 
       "flying"
     ], 
-    "ss_id": 175
+    "ss_id": 175,
+    "evolves_from": 174,
+    "evolves_to": null
   }, 
   {
     "name": "Noibat", 
@@ -1838,7 +2188,9 @@ let pokemon_list = [
       "flying", 
       "dragon"
     ], 
-    "ss_id": 176
+    "ss_id": 176,
+    "evolves_from": null,
+    "evolves_to": 177
   }, 
   {
     "name": "Noivern", 
@@ -1849,10 +2201,12 @@ let pokemon_list = [
       "flying", 
       "dragon"
     ], 
-    "ss_id": 177
+    "ss_id": 177,
+    "evolves_from": 176,
+    "evolves_to": null
   }, 
   {
-    "name": "Onix\ufffd", 
+    "name": "Onix", 
     "caught": true, 
     "gen_id": 95, 
     "img_src": "https://www.serebii.net/swordshield/pokemon/095.png", 
@@ -1860,7 +2214,9 @@ let pokemon_list = [
       "rock", 
       "ground"
     ], 
-    "ss_id": 178
+    "ss_id": 178,
+    "evolves_from": null,
+    "evolves_to": 179
   }, 
   {
     "name": "Steelix", 
@@ -1871,7 +2227,9 @@ let pokemon_list = [
       "steel", 
       "ground"
     ], 
-    "ss_id": 179
+    "ss_id": 179,
+    "evolves_from": 178,
+    "evolves_to": null
   }, 
   {
     "name": "Arrokuda", 
@@ -1881,7 +2239,9 @@ let pokemon_list = [
     "type": [
       "water"
     ], 
-    "ss_id": 180
+    "ss_id": 180,
+    "evolves_from": null,
+    "evolves_to": 181
   }, 
   {
     "name": "Barraskewda", 
@@ -1891,7 +2251,9 @@ let pokemon_list = [
     "type": [
       "water"
     ], 
-    "ss_id": 181
+    "ss_id": 181,
+    "evolves_from": 180,
+    "evolves_to": null
   }, 
   {
     "name": "Meowth", 
@@ -1901,7 +2263,9 @@ let pokemon_list = [
     "type": [
       "steel"
     ], 
-    "ss_id": 182
+    "ss_id": 182,
+    "evolves_from": null,
+    "evolves_to": [183, 184]
   }, 
   {
     "name": "Perrserker", 
@@ -1911,7 +2275,9 @@ let pokemon_list = [
     "type": [
       "steel"
     ], 
-    "ss_id": 183
+    "ss_id": 183,
+    "evolves_from": 182,
+    "evolves_to": null
   }, 
   {
     "name": "Persian", 
@@ -1921,7 +2287,9 @@ let pokemon_list = [
     "type": [
       "normal"
     ], 
-    "ss_id": 184
+    "ss_id": 184,
+    "evolves_from": 182,
+    "evolves_to": null
   }, 
   {
     "name": "Milcery", 
@@ -1931,7 +2299,9 @@ let pokemon_list = [
     "type": [
       "fairy"
     ], 
-    "ss_id": 185
+    "ss_id": 185,
+    "evolves_from": null,
+    "evolves_to": 186
   }, 
   {
     "name": "Alcremie", 
@@ -1941,7 +2311,9 @@ let pokemon_list = [
     "type": [
       "fairy"
     ], 
-    "ss_id": 186
+    "ss_id": 186,
+    "evolves_from": 185,
+    "evolves_to": null
   }, 
   {
     "name": "Cutiefly", 
@@ -1952,7 +2324,9 @@ let pokemon_list = [
       "bug", 
       "fairy"
     ], 
-    "ss_id": 187
+    "ss_id": 187,
+    "evolves_from": null,
+    "evolves_to": 188
   }, 
   {
     "name": "Ribombee", 
@@ -1963,7 +2337,9 @@ let pokemon_list = [
       "bug", 
       "fairy"
     ], 
-    "ss_id": 188
+    "ss_id": 188,
+    "evolves_from": 187,
+    "evolves_to": null
   }, 
   {
     "name": "Ferroseed", 
@@ -1974,7 +2350,9 @@ let pokemon_list = [
       "grass", 
       "steel"
     ], 
-    "ss_id": 189
+    "ss_id": 189,
+    "evolves_from": null,
+    "evolves_to": 190
   }, 
   {
     "name": "Ferrothorn", 
@@ -1985,7 +2363,9 @@ let pokemon_list = [
       "grass", 
       "steel"
     ], 
-    "ss_id": 190
+    "ss_id": 190,
+    "evolves_from": 189,
+    "evolves_to": null
   }, 
   {
     "name": "Pumpkaboo", 
@@ -1996,7 +2376,9 @@ let pokemon_list = [
       "ghost", 
       "grass"
     ], 
-    "ss_id": 191
+    "ss_id": 191,
+    "evolves_from": null,
+    "evolves_to": 192
   }, 
   {
     "name": "Gourgeist", 
@@ -2007,7 +2389,9 @@ let pokemon_list = [
       "ghost", 
       "grass"
     ], 
-    "ss_id": 192
+    "ss_id": 192,
+    "evolves_from": 191,
+    "evolves_to": null
   }, 
   {
     "name": "Pichu", 
@@ -2017,7 +2401,9 @@ let pokemon_list = [
     "type": [
       "electric"
     ], 
-    "ss_id": 193
+    "ss_id": 193,
+    "evolves_from": null,
+    "evolves_to": 194
   }, 
   {
     "name": "Pikachu", 
@@ -2027,7 +2413,9 @@ let pokemon_list = [
     "type": [
       "electric"
     ], 
-    "ss_id": 194
+    "ss_id": 194,
+    "evolves_from": 193,
+    "evolves_to": 195
   }, 
   {
     "name": "Raichu", 
@@ -2037,7 +2425,9 @@ let pokemon_list = [
     "type": [
       "electric"
     ], 
-    "ss_id": 195
+    "ss_id": 195,
+    "evolves_from": 194,
+    "evolves_to": null
   }, 
   {
     "name": "Eevee", 
@@ -2047,7 +2437,9 @@ let pokemon_list = [
     "type": [
       "normal"
     ], 
-    "ss_id": 196
+    "ss_id": 196,
+    "evolves_from": null,
+    "evolves_to": [197, 198, 199, 200, 201, 202, 203, 204]
   }, 
   {
     "name": "Vaporeon", 
@@ -2057,7 +2449,9 @@ let pokemon_list = [
     "type": [
       "water"
     ], 
-    "ss_id": 197
+    "ss_id": 197,
+    "evolves_from": 196,
+    "evolves_to": null
   }, 
   {
     "name": "Jolteon", 
@@ -2067,7 +2461,9 @@ let pokemon_list = [
     "type": [
       "electric"
     ], 
-    "ss_id": 198
+    "ss_id": 198,
+    "evolves_from": 196,
+    "evolves_to": null
   }, 
   {
     "name": "Flareon", 
@@ -2077,7 +2473,9 @@ let pokemon_list = [
     "type": [
       "fire"
     ], 
-    "ss_id": 199
+    "ss_id": 199,
+    "evolves_from": 196,
+    "evolves_to": null
   }, 
   {
     "name": "Espeon", 
@@ -2087,7 +2485,9 @@ let pokemon_list = [
     "type": [
       "psychic"
     ], 
-    "ss_id": 200
+    "ss_id": 200,
+    "evolves_from": 196,
+    "evolves_to": null
   }, 
   {
     "name": "Umbreon", 
@@ -2097,7 +2497,9 @@ let pokemon_list = [
     "type": [
       "dark"
     ], 
-    "ss_id": 201
+    "ss_id": 201,
+    "evolves_from": 196,
+    "evolves_to": null
   }, 
   {
     "name": "Leafeon", 
@@ -2107,7 +2509,9 @@ let pokemon_list = [
     "type": [
       "grass"
     ], 
-    "ss_id": 202
+    "ss_id": 202,
+    "evolves_from": 196,
+    "evolves_to": null
   }, 
   {
     "name": "Glaceon", 
@@ -2117,7 +2521,9 @@ let pokemon_list = [
     "type": [
       "ice"
     ], 
-    "ss_id": 203
+    "ss_id": 203,
+    "evolves_from": 196,
+    "evolves_to": null
   }, 
   {
     "name": "Slyveon", 
@@ -2127,7 +2533,9 @@ let pokemon_list = [
     "type": [
       "fairy"
     ], 
-    "ss_id": 204
+    "ss_id": 204,
+    "evolves_from": 196,
+    "evolves_to": null
   }, 
   {
     "name": "Applin", 
@@ -2138,7 +2546,9 @@ let pokemon_list = [
       "grass", 
       "dragon"
     ], 
-    "ss_id": 205
+    "ss_id": 205,
+    "evolves_from": null,
+    "evolves_to": [206, 207]
   }, 
   {
     "name": "Flapple", 
@@ -2149,7 +2559,9 @@ let pokemon_list = [
       "grass", 
       "dragon"
     ], 
-    "ss_id": 206
+    "ss_id": 206,
+    "evolves_from": 205,
+    "evolves_to": null
   }, 
   {
     "name": "Appletun", 
@@ -2160,7 +2572,9 @@ let pokemon_list = [
       "grass", 
       "dragon"
     ], 
-    "ss_id": 207
+    "ss_id": 207,
+    "evolves_from": 205,
+    "evolves_to": null
   }, 
   {
     "name": "Espurr", 
@@ -2170,7 +2584,9 @@ let pokemon_list = [
     "type": [
       "psychic"
     ], 
-    "ss_id": 208
+    "ss_id": 208,
+    "evolves_from": null,
+    "evolves_to": 209
   }, 
   {
     "name": "Meowstic", 
@@ -2180,7 +2596,9 @@ let pokemon_list = [
     "type": [
       "psychic"
     ], 
-    "ss_id": 209
+    "ss_id": 209,
+    "evolves_from": 208,
+    "evolves_to": null
   }, 
   {
     "name": "Swirlix", 
@@ -2190,7 +2608,9 @@ let pokemon_list = [
     "type": [
       "fairy"
     ], 
-    "ss_id": 210
+    "ss_id": 210,
+    "evolves_from": null,
+    "evolves_to": 211
   }, 
   {
     "name": "Slurpuff", 
@@ -2200,7 +2620,9 @@ let pokemon_list = [
     "type": [
       "fairy"
     ], 
-    "ss_id": 211
+    "ss_id": 211,
+    "evolves_from": 210,
+    "evolves_to": null
   }, 
   {
     "name": "Spritzee", 
@@ -2210,7 +2632,9 @@ let pokemon_list = [
     "type": [
       "fairy"
     ], 
-    "ss_id": 212
+    "ss_id": 212,
+    "evolves_from": null,
+    "evolves_to": 213
   }, 
   {
     "name": "Aromatisse", 
@@ -2220,7 +2644,9 @@ let pokemon_list = [
     "type": [
       "fairy"
     ], 
-    "ss_id": 213
+    "ss_id": 213,
+    "evolves_from": 212,
+    "evolves_to": null
   }, 
   {
     "name": "Dewpider", 
@@ -2231,7 +2657,9 @@ let pokemon_list = [
       "water", 
       "grass"
     ], 
-    "ss_id": 214
+    "ss_id": 214,
+    "evolves_from": null,
+    "evolves_to": 215
   }, 
   {
     "name": "Araquanid", 
@@ -2242,7 +2670,9 @@ let pokemon_list = [
       "water", 
       "grass"
     ], 
-    "ss_id": 215
+    "ss_id": 215,
+    "evolves_from": 214,
+    "evolves_to": null
   }, 
   {
     "name": "Wynaut", 
@@ -2252,7 +2682,9 @@ let pokemon_list = [
     "type": [
       "psychic"
     ], 
-    "ss_id": 216
+    "ss_id": 216,
+    "evolves_from": null,
+    "evolves_to": 217
   }, 
   {
     "name": "Wobuffet", 
@@ -2262,7 +2694,9 @@ let pokemon_list = [
     "type": [
       "psychic"
     ], 
-    "ss_id": 217
+    "ss_id": 217,
+    "evolves_from": 216,
+    "evolves_to": null
   }, 
   {
     "name": "Farfetch'd", 
@@ -2272,7 +2706,9 @@ let pokemon_list = [
     "type": [
       "fighting"
     ], 
-    "ss_id": 218
+    "ss_id": 218,
+    "evolves_from": null,
+    "evolves_to": 219
   }, 
   {
     "name": "Sirfetch'd", 
@@ -2282,7 +2718,9 @@ let pokemon_list = [
     "type": [
       "fighting"
     ], 
-    "ss_id": 219
+    "ss_id": 219,
+    "evolves_from": 218,
+    "evolves_to": null
   }, 
   {
     "name": "Chinchou", 
@@ -2293,7 +2731,9 @@ let pokemon_list = [
       "water", 
       "electric"
     ], 
-    "ss_id": 220
+    "ss_id": 220,
+    "evolves_from": null,
+    "evolves_to": 221
   }, 
   {
     "name": "Lanturn", 
@@ -2304,7 +2744,9 @@ let pokemon_list = [
       "water", 
       "electric"
     ], 
-    "ss_id": 221
+    "ss_id": 221,
+    "evolves_from": 220,
+    "evolves_to": null
   }, 
   {
     "name": "Croagunk", 
@@ -2315,7 +2757,9 @@ let pokemon_list = [
       "poison", 
       "fighting"
     ], 
-    "ss_id": 222
+    "ss_id": 222,
+    "evolves_from": null,
+    "evolves_to": 223
   }, 
   {
     "name": "Toxicroak", 
@@ -2326,7 +2770,9 @@ let pokemon_list = [
       "poison", 
       "fighting"
     ], 
-    "ss_id": 223
+    "ss_id": 223,
+    "evolves_from": 222,
+    "evolves_to": null
   }, 
   {
     "name": "Scraggy", 
@@ -2337,7 +2783,9 @@ let pokemon_list = [
       "dark", 
       "fighting"
     ], 
-    "ss_id": 224
+    "ss_id": 224,
+    "evolves_from": null,
+    "evolves_to": 225
   }, 
   {
     "name": "Scrafty", 
@@ -2348,7 +2796,9 @@ let pokemon_list = [
       "dark", 
       "fighting"
     ], 
-    "ss_id": 225
+    "ss_id": 225,
+    "evolves_from": 224,
+    "evolves_to": null
   }, 
   {
     "name": "Stunfisk", 
@@ -2359,7 +2809,9 @@ let pokemon_list = [
       "ground", 
       "steel"
     ], 
-    "ss_id": 226
+    "ss_id": 226,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Shuckle", 
@@ -2370,7 +2822,9 @@ let pokemon_list = [
       "bug", 
       "rock"
     ], 
-    "ss_id": 227
+    "ss_id": 227,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Barboach", 
@@ -2381,7 +2835,9 @@ let pokemon_list = [
       "water", 
       "ground"
     ], 
-    "ss_id": 228
+    "ss_id": 228,
+    "evolves_from": null,
+    "evolves_to": 229
   }, 
   {
     "name": "Whiscash", 
@@ -2392,7 +2848,9 @@ let pokemon_list = [
       "water", 
       "ground"
     ], 
-    "ss_id": 229
+    "ss_id": 229,
+    "evolves_from": 228,
+    "evolves_to": null
   }, 
   {
     "name": "Shellos", 
@@ -2402,7 +2860,9 @@ let pokemon_list = [
     "type": [
       "water"
     ], 
-    "ss_id": 230
+    "ss_id": 230,
+    "evolves_from": null,
+    "evolves_to": 231
   }, 
   {
     "name": "Gastrodon", 
@@ -2413,7 +2873,9 @@ let pokemon_list = [
       "water", 
       "ground"
     ], 
-    "ss_id": 231
+    "ss_id": 231,
+    "evolves_from": 230,
+    "evolves_to": null
   }, 
   {
     "name": "Wimpod", 
@@ -2424,7 +2886,9 @@ let pokemon_list = [
       "bug", 
       "water"
     ], 
-    "ss_id": 232
+    "ss_id": 232,
+    "evolves_from": null,
+    "evolves_to": 233
   }, 
   {
     "name": "Golisopod", 
@@ -2435,7 +2899,9 @@ let pokemon_list = [
       "bug", 
       "water"
     ], 
-    "ss_id": 233
+    "ss_id": 233,
+    "evolves_from": 232,
+    "evolves_to": null
   }, 
   {
     "name": "Binacle", 
@@ -2446,7 +2912,9 @@ let pokemon_list = [
       "rock", 
       "water"
     ], 
-    "ss_id": 234
+    "ss_id": 234,
+    "evolves_from": null,
+    "evolves_to": 235
   }, 
   {
     "name": "Barbaracle", 
@@ -2457,7 +2925,9 @@ let pokemon_list = [
       "rock", 
       "water"
     ], 
-    "ss_id": 235
+    "ss_id": 235,
+    "evolves_from": 234,
+    "evolves_to": null
   }, 
   {
     "name": "Corsola", 
@@ -2467,7 +2937,9 @@ let pokemon_list = [
     "type": [
       "ghost"
     ], 
-    "ss_id": 236
+    "ss_id": 236,
+    "evolves_from": null,
+    "evolves_to": 237
   }, 
   {
     "name": "Cursola", 
@@ -2477,7 +2949,9 @@ let pokemon_list = [
     "type": [
       "ghost"
     ], 
-    "ss_id": 237
+    "ss_id": 237,
+    "evolves_from": 236,
+    "evolves_to": null
   }, 
   {
     "name": "Impidimp", 
@@ -2488,7 +2962,9 @@ let pokemon_list = [
       "dark", 
       "fairy"
     ], 
-    "ss_id": 238
+    "ss_id": 238,
+    "evolves_from": null,
+    "evolves_to": 239
   }, 
   {
     "name": "Morgrem", 
@@ -2499,7 +2975,9 @@ let pokemon_list = [
       "dark", 
       "fairy"
     ], 
-    "ss_id": 239
+    "ss_id": 239,
+    "evolves_from": 238,
+    "evolves_to": 240
   }, 
   {
     "name": "Grimmsnarl", 
@@ -2510,7 +2988,9 @@ let pokemon_list = [
       "dark", 
       "fairy"
     ], 
-    "ss_id": 240
+    "ss_id": 240,
+    "evolves_from": 239,
+    "evolves_to": null
   }, 
   {
     "name": "Hatenna", 
@@ -2520,7 +3000,9 @@ let pokemon_list = [
     "type": [
       "psychic"
     ], 
-    "ss_id": 241
+    "ss_id": 241,
+    "evolves_from": null,
+    "evolves_to": 242
   }, 
   {
     "name": "Hattrem", 
@@ -2530,7 +3012,9 @@ let pokemon_list = [
     "type": [
       "psychic"
     ], 
-    "ss_id": 242
+    "ss_id": 242,
+    "evolves_from": 241,
+    "evolves_to": 243
   }, 
   {
     "name": "Hatterene", 
@@ -2541,7 +3025,9 @@ let pokemon_list = [
       "psychic", 
       "fairy"
     ], 
-    "ss_id": 243
+    "ss_id": 243,
+    "evolves_from": 242,
+    "evolves_to": null
   }, 
   {
     "name": "Salandit", 
@@ -2552,7 +3038,9 @@ let pokemon_list = [
       "poison", 
       "fire"
     ], 
-    "ss_id": 244
+    "ss_id": 244,
+    "evolves_from": null,
+    "evolves_to": 245
   }, 
   {
     "name": "Salazzle", 
@@ -2563,7 +3051,9 @@ let pokemon_list = [
       "poison", 
       "fire"
     ], 
-    "ss_id": 245
+    "ss_id": 245,
+    "evolves_from": 244,
+    "evolves_to": null
   }, 
   {
     "name": "Pawniard", 
@@ -2574,7 +3064,9 @@ let pokemon_list = [
       "dark", 
       "steel"
     ], 
-    "ss_id": 246
+    "ss_id": 246,
+    "evolves_from": null,
+    "evolves_to": 247
   }, 
   {
     "name": "Bisharp", 
@@ -2585,7 +3077,9 @@ let pokemon_list = [
       "dark", 
       "steel"
     ], 
-    "ss_id": 247
+    "ss_id": 247,
+    "evolves_from": 246,
+    "evolves_to": null
   }, 
   {
     "name": "Throh", 
@@ -2595,7 +3089,9 @@ let pokemon_list = [
     "type": [
       "fighting"
     ], 
-    "ss_id": 248
+    "ss_id": 248,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Sawk", 
@@ -2605,7 +3101,9 @@ let pokemon_list = [
     "type": [
       "fighting"
     ], 
-    "ss_id": 249
+    "ss_id": 249,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Koffing", 
@@ -2615,7 +3113,9 @@ let pokemon_list = [
     "type": [
       "poison"
     ], 
-    "ss_id": 250
+    "ss_id": 250,
+    "evolves_from": null,
+    "evolves_to": 251
   }, 
   {
     "name": "Weezing", 
@@ -2626,7 +3126,9 @@ let pokemon_list = [
       "poison", 
       "fairy"
     ], 
-    "ss_id": 251
+    "ss_id": 251,
+    "evolves_from": 250,
+    "evolves_to": null
   }, 
   {
     "name": "Bonsly", 
@@ -2636,7 +3138,9 @@ let pokemon_list = [
     "type": [
       "rock"
     ], 
-    "ss_id": 252
+    "ss_id": 252,
+    "evolves_from": null,
+    "evolves_to": 253
   }, 
   {
     "name": "Sudowoodo", 
@@ -2646,7 +3150,9 @@ let pokemon_list = [
     "type": [
       "rock"
     ], 
-    "ss_id": 253
+    "ss_id": 253,
+    "evolves_from": 252,
+    "evolves_to": null
   }, 
   {
     "name": "Cleffa", 
@@ -2656,7 +3162,9 @@ let pokemon_list = [
     "type": [
       "fairy"
     ], 
-    "ss_id": 254
+    "ss_id": 254,
+    "evolves_from": null,
+    "evolves_to": 255
   }, 
   {
     "name": "Clefairy", 
@@ -2666,7 +3174,9 @@ let pokemon_list = [
     "type": [
       "fairy"
     ], 
-    "ss_id": 255
+    "ss_id": 255,
+    "evolves_from": 254,
+    "evolves_to": 256
   }, 
   {
     "name": "Clefable", 
@@ -2676,7 +3186,9 @@ let pokemon_list = [
     "type": [
       "fairy"
     ], 
-    "ss_id": 256
+    "ss_id": 256,
+    "evolves_from": 255,
+    "evolves_to": null
   }, 
   {
     "name": "Togepi", 
@@ -2686,7 +3198,9 @@ let pokemon_list = [
     "type": [
       "fairy"
     ], 
-    "ss_id": 257
+    "ss_id": 257,
+    "evolves_from": null,
+    "evolves_to": 258
   }, 
   {
     "name": "Togetic", 
@@ -2697,7 +3211,9 @@ let pokemon_list = [
       "fairy", 
       "flying"
     ], 
-    "ss_id": 258
+    "ss_id": 258,
+    "evolves_from": 257,
+    "evolves_to": 259
   }, 
   {
     "name": "Togekiss", 
@@ -2708,7 +3224,9 @@ let pokemon_list = [
       "fairy", 
       "flying"
     ], 
-    "ss_id": 259
+    "ss_id": 259,
+    "evolves_from": 258,
+    "evolves_to": null
   }, 
   {
     "name": "Munchlax", 
@@ -2718,7 +3236,9 @@ let pokemon_list = [
     "type": [
       "normal"
     ], 
-    "ss_id": 260
+    "ss_id": 260,
+    "evolves_from": null,
+    "evolves_to": 261
   }, 
   {
     "name": "Snorlax", 
@@ -2728,7 +3248,9 @@ let pokemon_list = [
     "type": [
       "normal"
     ], 
-    "ss_id": 261
+    "ss_id": 261,
+    "evolves_from": 260,
+    "evolves_to": null
   }, 
   {
     "name": "Cottonee", 
@@ -2739,7 +3261,9 @@ let pokemon_list = [
       "grass", 
       "fairy"
     ], 
-    "ss_id": 262
+    "ss_id": 262,
+    "evolves_from": null,
+    "evolves_to": 263
   }, 
   {
     "name": "Whimsicott", 
@@ -2750,7 +3274,9 @@ let pokemon_list = [
       "grass", 
       "fairy"
     ], 
-    "ss_id": 263
+    "ss_id": 263,
+    "evolves_from": 262,
+    "evolves_to": null
   }, 
   {
     "name": "Rhyhorn", 
@@ -2761,7 +3287,9 @@ let pokemon_list = [
       "ground", 
       "rock"
     ], 
-    "ss_id": 264
+    "ss_id": 264,
+    "evolves_from": null,
+    "evolves_to": 265
   }, 
   {
     "name": "Rhydon", 
@@ -2772,7 +3300,9 @@ let pokemon_list = [
       "ground", 
       "rock"
     ], 
-    "ss_id": 265
+    "ss_id": 265,
+    "evolves_from": 264,
+    "evolves_to": 266
   }, 
   {
     "name": "Rhyperior", 
@@ -2783,7 +3313,9 @@ let pokemon_list = [
       "ground", 
       "rock"
     ], 
-    "ss_id": 266
+    "ss_id": 266,
+    "evolves_from": 265,
+    "evolves_to": null
   }, 
   {
     "name": "Gothita", 
@@ -2793,7 +3325,9 @@ let pokemon_list = [
     "type": [
       "psychic"
     ], 
-    "ss_id": 267
+    "ss_id": 267,
+    "evolves_from": null,
+    "evolves_to": 268
   }, 
   {
     "name": "Gothorita", 
@@ -2803,7 +3337,9 @@ let pokemon_list = [
     "type": [
       "psychic"
     ], 
-    "ss_id": 268
+    "ss_id": 268,
+    "evolves_from": 267,
+    "evolves_to": 269
   }, 
   {
     "name": "Gothitelle", 
@@ -2813,7 +3349,9 @@ let pokemon_list = [
     "type": [
       "psychic"
     ], 
-    "ss_id": 269
+    "ss_id": 269,
+    "evolves_from": 268,
+    "evolves_to": null
   }, 
   {
     "name": "Solosis", 
@@ -2823,7 +3361,9 @@ let pokemon_list = [
     "type": [
       "psychic"
     ], 
-    "ss_id": 270
+    "ss_id": 270,
+    "evolves_from": null,
+    "evolves_to": 271
   }, 
   {
     "name": "Duosion", 
@@ -2833,7 +3373,9 @@ let pokemon_list = [
     "type": [
       "psychic"
     ], 
-    "ss_id": 271
+    "ss_id": 271,
+    "evolves_from": 270,
+    "evolves_to": 272
   }, 
   {
     "name": "Reuniclus", 
@@ -2843,7 +3385,9 @@ let pokemon_list = [
     "type": [
       "psychic"
     ], 
-    "ss_id": 272
+    "ss_id": 272,
+    "evolves_from": 271,
+    "evolves_to": null
   }, 
   {
     "name": "Karrablast", 
@@ -2853,7 +3397,9 @@ let pokemon_list = [
     "type": [
       "bug"
     ], 
-    "ss_id": 273
+    "ss_id": 273,
+    "evolves_from": null,
+    "evolves_to": 274
   }, 
   {
     "name": "Escavalier", 
@@ -2864,7 +3410,9 @@ let pokemon_list = [
       "bug", 
       "steel"
     ], 
-    "ss_id": 274
+    "ss_id": 274,
+    "evolves_from": 273,
+    "evolves_to": null
   }, 
   {
     "name": "Shelmet", 
@@ -2874,7 +3422,9 @@ let pokemon_list = [
     "type": [
       "bug"
     ], 
-    "ss_id": 275
+    "ss_id": 275,
+    "evolves_from": null,
+    "evolves_to": 276
   }, 
   {
     "name": "Accelgor", 
@@ -2884,7 +3434,9 @@ let pokemon_list = [
     "type": [
       "bug"
     ], 
-    "ss_id": 276
+    "ss_id": 276,
+    "evolves_from": 275,
+    "evolves_to": null
   }, 
   {
     "name": "Elgyem", 
@@ -2894,7 +3446,9 @@ let pokemon_list = [
     "type": [
       "psychic"
     ], 
-    "ss_id": 277
+    "ss_id": 277,
+    "evolves_from": null,
+    "evolves_to": 278
   }, 
   {
     "name": "Beheeyem", 
@@ -2904,7 +3458,9 @@ let pokemon_list = [
     "type": [
       "psychic"
     ], 
-    "ss_id": 278
+    "ss_id": 278,
+    "evolves_from": 277,
+    "evolves_to": null
   }, 
   {
     "name": "Cubchoo", 
@@ -2914,7 +3470,9 @@ let pokemon_list = [
     "type": [
       "ice"
     ], 
-    "ss_id": 279
+    "ss_id": 279,
+    "evolves_from": null,
+    "evolves_to": 280
   }, 
   {
     "name": "Beartic", 
@@ -2924,7 +3482,9 @@ let pokemon_list = [
     "type": [
       "ice"
     ], 
-    "ss_id": 280
+    "ss_id": 280,
+    "evolves_from": 279,
+    "evolves_to": null
   }, 
   {
     "name": "Rufflet", 
@@ -2935,7 +3495,9 @@ let pokemon_list = [
       "normal", 
       "flying"
     ], 
-    "ss_id": 281
+    "ss_id": 281,
+    "evolves_from": null,
+    "evolves_to": 282
   }, 
   {
     "name": "Braviary", 
@@ -2946,7 +3508,9 @@ let pokemon_list = [
       "normal", 
       "flying"
     ], 
-    "ss_id": 282
+    "ss_id": 282,
+    "evolves_from": 281,
+    "evolves_to": null
   }, 
   {
     "name": "Vullaby", 
@@ -2957,7 +3521,9 @@ let pokemon_list = [
       "dark", 
       "flying"
     ], 
-    "ss_id": 283
+    "ss_id": 283,
+    "evolves_from": null,
+    "evolves_to": 284
   }, 
   {
     "name": "Mandibuzz", 
@@ -2968,7 +3534,9 @@ let pokemon_list = [
       "dark", 
       "flying"
     ], 
-    "ss_id": 284
+    "ss_id": 284,
+    "evolves_from": 283,
+    "evolves_to": null
   }, 
   {
     "name": "Skorupi", 
@@ -2979,7 +3547,9 @@ let pokemon_list = [
       "poison", 
       "bug"
     ], 
-    "ss_id": 285
+    "ss_id": 285,
+    "evolves_from": null,
+    "evolves_to": 286
   }, 
   {
     "name": "Drapion", 
@@ -2990,7 +3560,9 @@ let pokemon_list = [
       "poison", 
       "bug"
     ], 
-    "ss_id": 286
+    "ss_id": 286,
+    "evolves_from": 285,
+    "evolves_to": null
   }, 
   {
     "name": "Litwick", 
@@ -3001,7 +3573,9 @@ let pokemon_list = [
       "ghost", 
       "fire"
     ], 
-    "ss_id": 287
+    "ss_id": 287,
+    "evolves_from": null,
+    "evolves_to": 288
   }, 
   {
     "name": "Lampent", 
@@ -3012,7 +3586,9 @@ let pokemon_list = [
       "ghost", 
       "fire"
     ], 
-    "ss_id": 288
+    "ss_id": 288,
+    "evolves_from": 287,
+    "evolves_to": 289
   }, 
   {
     "name": "Chandelure", 
@@ -3023,7 +3599,9 @@ let pokemon_list = [
       "ghost", 
       "fire"
     ], 
-    "ss_id": 289
+    "ss_id": 289,
+    "evolves_from": 288,
+    "evolves_to": null
   }, 
   {
     "name": "Inkay", 
@@ -3034,7 +3612,9 @@ let pokemon_list = [
       "dark", 
       "psychic"
     ], 
-    "ss_id": 290
+    "ss_id": 290,
+    "evolves_from": null,
+    "evolves_to": 291
   }, 
   {
     "name": "Malamar", 
@@ -3045,7 +3625,9 @@ let pokemon_list = [
       "dark", 
       "psychic"
     ], 
-    "ss_id": 291
+    "ss_id": 291,
+    "evolves_from": 290,
+    "evolves_to": null
   }, 
   {
     "name": "Sneasel", 
@@ -3056,7 +3638,9 @@ let pokemon_list = [
       "dark", 
       "ice"
     ], 
-    "ss_id": 292
+    "ss_id": 292,
+    "evolves_from": null,
+    "evolves_to": 293
   }, 
   {
     "name": "Weavile", 
@@ -3067,7 +3651,9 @@ let pokemon_list = [
       "dark", 
       "ice"
     ], 
-    "ss_id": 293
+    "ss_id": 293,
+    "evolves_from": 292,
+    "evolves_to": null
   }, 
   {
     "name": "Sableye", 
@@ -3078,7 +3664,9 @@ let pokemon_list = [
       "dark", 
       "ghost"
     ], 
-    "ss_id": 294
+    "ss_id": 294,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Mawile", 
@@ -3089,7 +3677,9 @@ let pokemon_list = [
       "steel", 
       "fairy"
     ], 
-    "ss_id": 295
+    "ss_id": 295,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Maractus", 
@@ -3099,7 +3689,9 @@ let pokemon_list = [
     "type": [
       "grass"
     ], 
-    "ss_id": 296
+    "ss_id": 296,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Sigilyph", 
@@ -3110,7 +3702,9 @@ let pokemon_list = [
       "psychic", 
       "flying"
     ], 
-    "ss_id": 297
+    "ss_id": 297,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Riolu", 
@@ -3120,7 +3714,9 @@ let pokemon_list = [
     "type": [
       "fighting"
     ], 
-    "ss_id": 298
+    "ss_id": 298,
+    "evolves_from": null,
+    "evolves_to": 299
   }, 
   {
     "name": "Lucario", 
@@ -3131,7 +3727,9 @@ let pokemon_list = [
       "fighting", 
       "steel"
     ], 
-    "ss_id": 299
+    "ss_id": 299,
+    "evolves_from": 298,
+    "evolves_to": null
   }, 
   {
     "name": "Torkoal", 
@@ -3141,7 +3739,9 @@ let pokemon_list = [
     "type": [
       "fire"
     ], 
-    "ss_id": 300
+    "ss_id": 300,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Mimikyu", 
@@ -3152,7 +3752,9 @@ let pokemon_list = [
       "ghost", 
       "fairy"
     ], 
-    "ss_id": 301
+    "ss_id": 301,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Cufant", 
@@ -3162,7 +3764,9 @@ let pokemon_list = [
     "type": [
       "steel"
     ], 
-    "ss_id": 302
+    "ss_id": 302,
+    "evolves_from": null,
+    "evolves_to": 303
   }, 
   {
     "name": "Copperajah", 
@@ -3172,7 +3776,9 @@ let pokemon_list = [
     "type": [
       "steel"
     ], 
-    "ss_id": 303
+    "ss_id": 303,
+    "evolves_from": 302,
+    "evolves_to": null
   }, 
   {
     "name": "Qwilfish", 
@@ -3183,7 +3789,9 @@ let pokemon_list = [
       "water", 
       "poison"
     ], 
-    "ss_id": 304
+    "ss_id": 304,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Frillish", 
@@ -3194,7 +3802,9 @@ let pokemon_list = [
       "water", 
       "ghost"
     ], 
-    "ss_id": 305
+    "ss_id": 305,
+    "evolves_from": null,
+    "evolves_to": 306
   }, 
   {
     "name": "Jellicent", 
@@ -3205,7 +3815,9 @@ let pokemon_list = [
       "water", 
       "ghost"
     ], 
-    "ss_id": 306
+    "ss_id": 306,
+    "evolves_from": 305,
+    "evolves_to": null
   }, 
   {
     "name": "Mareanie", 
@@ -3216,7 +3828,9 @@ let pokemon_list = [
       "poison", 
       "water"
     ], 
-    "ss_id": 307
+    "ss_id": 307,
+    "evolves_from": null,
+    "evolves_to": 308
   }, 
   {
     "name": "Toxapex", 
@@ -3227,7 +3841,9 @@ let pokemon_list = [
       "poison", 
       "water"
     ], 
-    "ss_id": 308
+    "ss_id": 308,
+    "evolves_from": 307,
+    "evolves_to": null
   }, 
   {
     "name": "Cramorant", 
@@ -3238,7 +3854,9 @@ let pokemon_list = [
       "flying", 
       "water"
     ], 
-    "ss_id": 309
+    "ss_id": 309,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Toxel", 
@@ -3249,7 +3867,9 @@ let pokemon_list = [
       "poison", 
       "electric"
     ], 
-    "ss_id": 310
+    "ss_id": 310,
+    "evolves_from": null,
+    "evolves_to": 311
   }, 
   {
     "name": "Toxtricity", 
@@ -3260,7 +3880,9 @@ let pokemon_list = [
       "poison", 
       "electric"
     ], 
-    "ss_id": 311
+    "ss_id": 311,
+    "evolves_from": 310,
+    "evolves_to": null
   }, 
   {
     "name": "Silicobra", 
@@ -3270,7 +3892,9 @@ let pokemon_list = [
     "type": [
       "ground"
     ], 
-    "ss_id": 312
+    "ss_id": 312,
+    "evolves_from": null,
+    "evolves_to": 313
   }, 
   {
     "name": "Sandaconda", 
@@ -3280,7 +3904,9 @@ let pokemon_list = [
     "type": [
       "ground"
     ], 
-    "ss_id": 313
+    "ss_id": 313,
+    "evolves_from": 312,
+    "evolves_to": null
   }, 
   {
     "name": "Hippopotas", 
@@ -3290,7 +3916,9 @@ let pokemon_list = [
     "type": [
       "ground"
     ], 
-    "ss_id": 314
+    "ss_id": 314,
+    "evolves_from": null,
+    "evolves_to": 315
   }, 
   {
     "name": "Hippowdown", 
@@ -3300,7 +3928,9 @@ let pokemon_list = [
     "type": [
       "ground"
     ], 
-    "ss_id": 315
+    "ss_id": 315,
+    "evolves_from": 314,
+    "evolves_to": null
   }, 
   {
     "name": "Durant", 
@@ -3311,7 +3941,9 @@ let pokemon_list = [
       "bug", 
       "steel"
     ], 
-    "ss_id": 316
+    "ss_id": 316,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Heatmor", 
@@ -3321,7 +3953,9 @@ let pokemon_list = [
     "type": [
       "fire"
     ], 
-    "ss_id": 317
+    "ss_id": 317,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Helioptile", 
@@ -3332,7 +3966,9 @@ let pokemon_list = [
       "electric", 
       "normal"
     ], 
-    "ss_id": 318
+    "ss_id": 318,
+    "evolves_from": null,
+    "evolves_to": 319
   }, 
   {
     "name": "Heliolisk", 
@@ -3343,7 +3979,9 @@ let pokemon_list = [
       "electric", 
       "normal"
     ], 
-    "ss_id": 319
+    "ss_id": 319,
+    "evolves_from": 318,
+    "evolves_to": null
   }, 
   {
     "name": "Hawlucha", 
@@ -3354,7 +3992,9 @@ let pokemon_list = [
       "fighting", 
       "flying"
     ], 
-    "ss_id": 320
+    "ss_id": 320,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Trapinch", 
@@ -3364,7 +4004,9 @@ let pokemon_list = [
     "type": [
       "ground"
     ], 
-    "ss_id": 321
+    "ss_id": 321,
+    "evolves_from": null,
+    "evolves_to": 322
   }, 
   {
     "name": "Vibrava", 
@@ -3375,7 +4017,9 @@ let pokemon_list = [
       "ground", 
       "dragon"
     ], 
-    "ss_id": 322
+    "ss_id": 322,
+    "evolves_from": 321,
+    "evolves_to": 323
   }, 
   {
     "name": "Flygon", 
@@ -3386,7 +4030,9 @@ let pokemon_list = [
       "ground", 
       "dragon"
     ], 
-    "ss_id": 323
+    "ss_id": 323,
+    "evolves_from": 322,
+    "evolves_to": null
   }, 
   {
     "name": "Axew", 
@@ -3396,7 +4042,9 @@ let pokemon_list = [
     "type": [
       "dragon"
     ], 
-    "ss_id": 324
+    "ss_id": 324,
+    "evolves_from": null,
+    "evolves_to": 325
   }, 
   {
     "name": "Fraxure", 
@@ -3406,7 +4054,9 @@ let pokemon_list = [
     "type": [
       "dragon"
     ], 
-    "ss_id": 325
+    "ss_id": 325,
+    "evolves_from": 324,
+    "evolves_to": 326
   }, 
   {
     "name": "Haxorus", 
@@ -3416,7 +4066,9 @@ let pokemon_list = [
     "type": [
       "dragon"
     ], 
-    "ss_id": 326
+    "ss_id": 326,
+    "evolves_from": 325,
+    "evolves_to": null
   }, 
   {
     "name": "Yamask", 
@@ -3427,7 +4079,9 @@ let pokemon_list = [
       "ghost", 
       "ground"
     ], 
-    "ss_id": 327
+    "ss_id": 327,
+    "evolves_from": null,
+    "evolves_to": [328, 329]
   }, 
   {
     "name": "Runerigus", 
@@ -3438,7 +4092,9 @@ let pokemon_list = [
       "ghost", 
       "ground"
     ], 
-    "ss_id": 328
+    "ss_id": 328,
+    "evolves_from": 327,
+    "evolves_to": null
   }, 
   {
     "name": "Cofagrigus", 
@@ -3448,7 +4104,9 @@ let pokemon_list = [
     "type": [
       "ghost"
     ], 
-    "ss_id": 329
+    "ss_id": 329,
+    "evolves_from": 327,
+    "evolves_to": null
   }, 
   {
     "name": "Honedge", 
@@ -3459,7 +4117,9 @@ let pokemon_list = [
       "steel", 
       "ghost"
     ], 
-    "ss_id": 330
+    "ss_id": 330,
+    "evolves_from": null,
+    "evolves_to": 331
   }, 
   {
     "name": "Doublade", 
@@ -3470,7 +4130,9 @@ let pokemon_list = [
       "steel", 
       "ghost"
     ], 
-    "ss_id": 331
+    "ss_id": 331,
+    "evolves_from": 330,
+    "evolves_to": 332
   }, 
   {
     "name": "Aegislash", 
@@ -3481,7 +4143,9 @@ let pokemon_list = [
       "steel", 
       "ghost"
     ], 
-    "ss_id": 332
+    "ss_id": 332,
+    "evolves_from": 331,
+    "evolves_to": null
   }, 
   {
     "name": "Ponyta", 
@@ -3491,7 +4155,9 @@ let pokemon_list = [
     "type": [
       "psychic"
     ], 
-    "ss_id": 333
+    "ss_id": 333,
+    "evolves_from": null,
+    "evolves_to": 334
   }, 
   {
     "name": "Rapidash", 
@@ -3502,7 +4168,9 @@ let pokemon_list = [
       "psychic", 
       "fire"
     ], 
-    "ss_id": 334
+    "ss_id": 334,
+    "evolves_from": 333,
+    "evolves_to": null
   }, 
   {
     "name": "Sinistea", 
@@ -3512,7 +4180,9 @@ let pokemon_list = [
     "type": [
       "ghost"
     ], 
-    "ss_id": 335
+    "ss_id": 335,
+    "evolves_from": null,
+    "evolves_to": 336
   }, 
   {
     "name": "Polteageist", 
@@ -3522,7 +4192,9 @@ let pokemon_list = [
     "type": [
       "ghost"
     ], 
-    "ss_id": 336
+    "ss_id": 336,
+    "evolves_from": 335,
+    "evolves_to": null
   }, 
   {
     "name": "Indeedee", 
@@ -3533,7 +4205,9 @@ let pokemon_list = [
       "psychic", 
       "normal"
     ], 
-    "ss_id": 337
+    "ss_id": 337,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Phantump", 
@@ -3544,7 +4218,9 @@ let pokemon_list = [
       "ghost", 
       "grass"
     ], 
-    "ss_id": 338
+    "ss_id": 338,
+    "evolves_from": null,
+    "evolves_to": 339
   }, 
   {
     "name": "Trevenant", 
@@ -3555,7 +4231,9 @@ let pokemon_list = [
       "ghost", 
       "grass"
     ], 
-    "ss_id": 339
+    "ss_id": 339,
+    "evolves_from": 338,
+    "evolves_to": null
   }, 
   {
     "name": "Morelull", 
@@ -3566,7 +4244,9 @@ let pokemon_list = [
       "grass", 
       "fairy"
     ], 
-    "ss_id": 340
+    "ss_id": 340,
+    "evolves_from": null,
+    "evolves_to": 341
   }, 
   {
     "name": "Shiinotic", 
@@ -3577,7 +4257,9 @@ let pokemon_list = [
       "grass", 
       "fairy"
     ], 
-    "ss_id": 341
+    "ss_id": 341,
+    "evolves_from": 340,
+    "evolves_to": null
   }, 
   {
     "name": "Oranguru", 
@@ -3588,7 +4270,9 @@ let pokemon_list = [
       "normal", 
       "psychic"
     ], 
-    "ss_id": 342
+    "ss_id": 342,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Passimian", 
@@ -3598,7 +4282,9 @@ let pokemon_list = [
     "type": [
       "fighting"
     ], 
-    "ss_id": 343
+    "ss_id": 343,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Morpeko", 
@@ -3609,7 +4295,9 @@ let pokemon_list = [
       "electric", 
       "dark"
     ], 
-    "ss_id": 344
+    "ss_id": 344,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Falinks", 
@@ -3619,7 +4307,9 @@ let pokemon_list = [
     "type": [
       "fighting"
     ], 
-    "ss_id": 345
+    "ss_id": 345,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Drampa", 
@@ -3630,7 +4320,9 @@ let pokemon_list = [
       "normal", 
       "dragon"
     ], 
-    "ss_id": 346
+    "ss_id": 346,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Turtonator", 
@@ -3641,7 +4333,9 @@ let pokemon_list = [
       "fire", 
       "dragon"
     ], 
-    "ss_id": 347
+    "ss_id": 347,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Togedemaru", 
@@ -3652,7 +4346,9 @@ let pokemon_list = [
       "electric", 
       "steel"
     ], 
-    "ss_id": 348
+    "ss_id": 348,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Snom", 
@@ -3663,7 +4359,9 @@ let pokemon_list = [
       "ice", 
       "bug"
     ], 
-    "ss_id": 349
+    "ss_id": 349,
+    "evolves_from": null,
+    "evolves_to": 350
   }, 
   {
     "name": "Frosmoth", 
@@ -3674,7 +4372,9 @@ let pokemon_list = [
       "ice", 
       "bug"
     ], 
-    "ss_id": 350
+    "ss_id": 350,
+    "evolves_from": 349,
+    "evolves_to": null
   }, 
   {
     "name": "Clobbopus", 
@@ -3684,7 +4384,9 @@ let pokemon_list = [
     "type": [
       "fighting"
     ], 
-    "ss_id": 351
+    "ss_id": 351,
+    "evolves_from": null,
+    "evolves_to": 352
   }, 
   {
     "name": "Grapploct", 
@@ -3694,7 +4396,9 @@ let pokemon_list = [
     "type": [
       "fighting"
     ], 
-    "ss_id": 352
+    "ss_id": 352,
+    "evolves_from": 351,
+    "evolves_to": null
   }, 
   {
     "name": "Pinchurchin", 
@@ -3704,7 +4408,9 @@ let pokemon_list = [
     "type": [
       "electric"
     ], 
-    "ss_id": 353
+    "ss_id": 353,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Mantyke", 
@@ -3715,7 +4421,9 @@ let pokemon_list = [
       "water", 
       "flying"
     ], 
-    "ss_id": 354
+    "ss_id": 354,
+    "evolves_from": null,
+    "evolves_to": 355
   }, 
   {
     "name": "Mantine", 
@@ -3726,7 +4434,9 @@ let pokemon_list = [
       "water", 
       "flying"
     ], 
-    "ss_id": 355
+    "ss_id": 355,
+    "evolves_from": 354,
+    "evolves_to": null
   }, 
   {
     "name": "Wailmer", 
@@ -3736,7 +4446,9 @@ let pokemon_list = [
     "type": [
       "water"
     ], 
-    "ss_id": 356
+    "ss_id": 356,
+    "evolves_from": null,
+    "evolves_to": 357
   }, 
   {
     "name": "Wailord", 
@@ -3746,7 +4458,9 @@ let pokemon_list = [
     "type": [
       "water"
     ], 
-    "ss_id": 357
+    "ss_id": 357,
+    "evolves_from": 356,
+    "evolves_to": null
   }, 
   {
     "name": "Bergmite", 
@@ -3756,7 +4470,9 @@ let pokemon_list = [
     "type": [
       "ice"
     ], 
-    "ss_id": 358
+    "ss_id": 358,
+    "evolves_from": null,
+    "evolves_to": 359
   }, 
   {
     "name": "Avalugg", 
@@ -3766,7 +4482,9 @@ let pokemon_list = [
     "type": [
       "ice"
     ], 
-    "ss_id": 359
+    "ss_id": 359,
+    "evolves_from": 358,
+    "evolves_to": null
   }, 
   {
     "name": "Dhelmise", 
@@ -3777,7 +4495,9 @@ let pokemon_list = [
       "ghost", 
       "grass"
     ], 
-    "ss_id": 360
+    "ss_id": 360,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Lapras", 
@@ -3788,7 +4508,9 @@ let pokemon_list = [
       "water", 
       "ice"
     ], 
-    "ss_id": 361
+    "ss_id": 361,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Lunatone", 
@@ -3799,7 +4521,9 @@ let pokemon_list = [
       "rock", 
       "psychic"
     ], 
-    "ss_id": 362
+    "ss_id": 362,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Solrock", 
@@ -3810,7 +4534,9 @@ let pokemon_list = [
       "rock", 
       "psychic"
     ], 
-    "ss_id": 363
+    "ss_id": 363,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Mime Jr.", 
@@ -3821,7 +4547,9 @@ let pokemon_list = [
       "psychic", 
       "fairy"
     ], 
-    "ss_id": 364
+    "ss_id": 364,
+    "evolves_from": null,
+    "evolves_to": 365
   }, 
   {
     "name": "Mr. Mime", 
@@ -3832,7 +4560,9 @@ let pokemon_list = [
       "psychic", 
       "ice"
     ], 
-    "ss_id": 365
+    "ss_id": 365,
+    "evolves_from": 364,
+    "evolves_to": 366
   }, 
   {
     "name": "Mr. Rime", 
@@ -3843,7 +4573,9 @@ let pokemon_list = [
       "psychic", 
       "ice"
     ], 
-    "ss_id": 366
+    "ss_id": 366,
+    "evolves_from": 365,
+    "evolves_to": null
   }, 
   {
     "name": "Darumaka", 
@@ -3853,7 +4585,9 @@ let pokemon_list = [
     "type": [
       "ice"
     ], 
-    "ss_id": 367
+    "ss_id": 367,
+    "evolves_from": null,
+    "evolves_to": 358
   }, 
   {
     "name": "Darmanitan", 
@@ -3863,7 +4597,9 @@ let pokemon_list = [
     "type": [
       "ice"
     ], 
-    "ss_id": 368
+    "ss_id": 368,
+    "evolves_from": 367,
+    "evolves_to": null
   }, 
   {
     "name": "Stonjourner", 
@@ -3873,7 +4609,9 @@ let pokemon_list = [
     "type": [
       "rock"
     ], 
-    "ss_id": 369
+    "ss_id": 369,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Eiscue", 
@@ -3883,7 +4621,9 @@ let pokemon_list = [
     "type": [
       "ice"
     ], 
-    "ss_id": 370
+    "ss_id": 370,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Duraludon", 
@@ -3894,7 +4634,9 @@ let pokemon_list = [
       "steel", 
       "dragon"
     ], 
-    "ss_id": 371
+    "ss_id": 371,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Rotom", 
@@ -3905,7 +4647,9 @@ let pokemon_list = [
       "electric", 
       "ghost"
     ], 
-    "ss_id": 372
+    "ss_id": 372,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Ditto", 
@@ -3915,7 +4659,9 @@ let pokemon_list = [
     "type": [
       "normal"
     ], 
-    "ss_id": 373
+    "ss_id": 373,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Dracozolt", 
@@ -3926,7 +4672,9 @@ let pokemon_list = [
       "dragon", 
       "electric"
     ], 
-    "ss_id": 374
+    "ss_id": 374,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Arctozolt", 
@@ -3937,7 +4685,9 @@ let pokemon_list = [
       "electric", 
       "ice"
     ], 
-    "ss_id": 375
+    "ss_id": 375,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Dracovish", 
@@ -3948,7 +4698,9 @@ let pokemon_list = [
       "water", 
       "dragon"
     ], 
-    "ss_id": 376
+    "ss_id": 376,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Arctovish", 
@@ -3959,7 +4711,9 @@ let pokemon_list = [
       "water", 
       "ice"
     ], 
-    "ss_id": 377
+    "ss_id": 377,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Charmander", 
@@ -3969,7 +4723,9 @@ let pokemon_list = [
     "type": [
       "fire"
     ], 
-    "ss_id": 378
+    "ss_id": 378,
+    "evolves_from": null,
+    "evolves_to": 379
   }, 
   {
     "name": "Charmeleon", 
@@ -3979,7 +4735,9 @@ let pokemon_list = [
     "type": [
       "fire"
     ], 
-    "ss_id": 379
+    "ss_id": 379,
+    "evolves_from": 378,
+    "evolves_to": 380
   }, 
   {
     "name": "Charizard", 
@@ -3989,7 +4747,9 @@ let pokemon_list = [
     "type": [
       "fire"
     ], 
-    "ss_id": 380
+    "ss_id": 380,
+    "evolves_from": 379,
+    "evolves_to": null
   }, 
   {
     "name": "Type: Null", 
@@ -3999,7 +4759,9 @@ let pokemon_list = [
     "type": [
       "normal"
     ], 
-    "ss_id": 381
+    "ss_id": 381,
+    "evolves_from": null,
+    "evolves_to": 382
   }, 
   {
     "name": "Silvally", 
@@ -4009,7 +4771,9 @@ let pokemon_list = [
     "type": [
       "normal"
     ], 
-    "ss_id": 382
+    "ss_id": 382,
+    "evolves_from": 381,
+    "evolves_to": null
   }, 
   {
     "name": "Larvitar", 
@@ -4020,7 +4784,9 @@ let pokemon_list = [
       "rock", 
       "ground"
     ], 
-    "ss_id": 383
+    "ss_id": 383,
+    "evolves_from": null,
+    "evolves_to": 382
   }, 
   {
     "name": "Pupitar", 
@@ -4031,7 +4797,9 @@ let pokemon_list = [
       "rock", 
       "ground"
     ], 
-    "ss_id": 384
+    "ss_id": 384,
+    "evolves_from": 383,
+    "evolves_to": 385
   }, 
   {
     "name": "Tyranitar", 
@@ -4042,7 +4810,9 @@ let pokemon_list = [
       "rock", 
       "ground"
     ], 
-    "ss_id": 385
+    "ss_id": 385,
+    "evolves_from": 384,
+    "evolves_to": null
   }, 
   {
     "name": "Deino", 
@@ -4053,7 +4823,9 @@ let pokemon_list = [
       "dark", 
       "dragon"
     ], 
-    "ss_id": 386
+    "ss_id": 386,
+    "evolves_from": null,
+    "evolves_to": 387
   }, 
   {
     "name": "Zweilous", 
@@ -4064,7 +4836,9 @@ let pokemon_list = [
       "dark", 
       "dragon"
     ], 
-    "ss_id": 387
+    "ss_id": 387,
+    "evolves_from": 386,
+    "evolves_to": 388
   }, 
   {
     "name": "Hydreigon", 
@@ -4074,7 +4848,9 @@ let pokemon_list = [
     "type": [
       "dragon"
     ], 
-    "ss_id": 388
+    "ss_id": 388,
+    "evolves_from": 387,
+    "evolves_to": null
   }, 
   {
     "name": "Goomy", 
@@ -4084,7 +4860,9 @@ let pokemon_list = [
     "type": [
       "dragon"
     ], 
-    "ss_id": 389
+    "ss_id": 389,
+    "evolves_from": null,
+    "evolves_to": 390
   }, 
   {
     "name": "Sliggoo", 
@@ -4094,7 +4872,9 @@ let pokemon_list = [
     "type": [
       "dragon"
     ], 
-    "ss_id": 390
+    "ss_id": 390,
+    "evolves_from": 389,
+    "evolves_to": 391
   }, 
   {
     "name": "Goodra", 
@@ -4104,7 +4884,9 @@ let pokemon_list = [
     "type": [
       "dragon"
     ], 
-    "ss_id": 391
+    "ss_id": 391,
+    "evolves_from": 390,
+    "evolves_to": null
   }, 
   {
     "name": "Jangmo-o", 
@@ -4114,7 +4896,9 @@ let pokemon_list = [
     "type": [
       "dragon"
     ], 
-    "ss_id": 392
+    "ss_id": 392,
+    "evolves_from": null,
+    "evolves_to": 393
   }, 
   {
     "name": "Hakamo-o", 
@@ -4125,7 +4909,9 @@ let pokemon_list = [
       "dragon", 
       "fighting"
     ], 
-    "ss_id": 393
+    "ss_id": 393,
+    "evolves_from": 392,
+    "evolves_to": 394
   }, 
   {
     "name": "Kommo-o", 
@@ -4136,7 +4922,9 @@ let pokemon_list = [
       "dragon", 
       "fighting"
     ], 
-    "ss_id": 394
+    "ss_id": 394,
+    "evolves_from": 393,
+    "evolves_to": null
   }, 
   {
     "name": "Dreepy", 
@@ -4147,7 +4935,9 @@ let pokemon_list = [
       "dragon", 
       "ghost"
     ], 
-    "ss_id": 395
+    "ss_id": 395,
+    "evolves_from": null,
+    "evolves_to": 396
   }, 
   {
     "name": "Drakloak", 
@@ -4158,7 +4948,9 @@ let pokemon_list = [
       "dragon", 
       "ghost"
     ], 
-    "ss_id": 396
+    "ss_id": 396,
+    "evolves_from": 395,
+    "evolves_to": 397
   }, 
   {
     "name": "Dragapult", 
@@ -4169,7 +4961,9 @@ let pokemon_list = [
       "dragon", 
       "ghost"
     ], 
-    "ss_id": 397
+    "ss_id": 397,
+    "evolves_from": 396,
+    "evolves_to": null
   }, 
   {
     "name": "Zacian", 
@@ -4180,7 +4974,9 @@ let pokemon_list = [
       "fairy", 
       "steel"
     ], 
-    "ss_id": 398
+    "ss_id": 398,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Zamazenta", 
@@ -4191,7 +4987,9 @@ let pokemon_list = [
       "fighting", 
       "steel"
     ], 
-    "ss_id": 399
+    "ss_id": 399,
+    "evolves_from": null,
+    "evolves_to": null
   }, 
   {
     "name": "Eternatus", 
@@ -4202,7 +5000,9 @@ let pokemon_list = [
       "poison", 
       "dragon"
     ], 
-    "ss_id": 400
+    "ss_id": 400,
+    "evolves_from": null,
+    "evolves_to": null
   }
 ];
 

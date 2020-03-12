@@ -5,6 +5,7 @@
       <h1>My Pokédex</h1>
       <div id="nav">
         <router-link to="/">Home</router-link> |
+        <router-link to="/suggested">Suggested</router-link> |
         <router-link to="/about">About</router-link>
       </div>
     </div>
@@ -71,8 +72,12 @@ a:hover {
   font-weight: 600;
 }
 
+.header-content a {
+  font-size: 1.1em;
+}
+
 #nav a {
-  font-weight: bold;
+  font-weight: 500;
   color: #414141;
 }
 
@@ -126,7 +131,7 @@ a:hover {
 /* Desktop */
 @media only screen and (min-width: 451px) {
   .content {
-    max-width: 850px;
+    max-width: 900px;
     margin: auto;
     margin-bottom: 75px;
   }
