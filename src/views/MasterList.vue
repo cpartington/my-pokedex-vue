@@ -2,10 +2,26 @@
 <div class="master-list">
   <h1 class="page-title">The Master List</h1>
 
+  <div class="filter-options">
+    <p>Show:</p>
+    <radioButton class="button" name="All" :checked="true" v-on:change="updateFilter('all')"></radioButton>
+    <radioButton
+      class="button"
+      name="Caught"
+      :checked="false"
+      v-on:change="updateFilter('caught')"
+    ></radioButton>
+    <radioButton
+      class="button"
+      name="Uncaught"
+      :checked="false"
+      v-on:change="updateFilter('uncaught')"
+    ></radioButton>
+  </div>
+
   <div v-for="(pokémon, index) in pokemonList" :key="pokémon.ss_id">
-    <div class="card">    
-      
-      <div class="card-content">  
+    <div class="card">
+      <div class="card-content">
         <div class="card-header">
           <p class="card-number">#{{ pokémon.ss_id.toString().padStart(3, '0') }}</p>
           <p class="card-title">{{ pokémon.name }}</p>
@@ -14,33 +30,50 @@
           <checkbox :caught="pokémon.caught" v-on:change="updateCaught(index)"></checkbox>
         </div>
       </div>
-      
+
       <div class="card-image">
-        <img class="card-image" :src="pokémon.img_src" :alt="pokémon.name"/>
+        <img class="card-image" :src="pokémon.img_src" :alt="pokémon.name" />
       </div>
-    
     </div>
   </div>
 </div>
 </template>
 
 <script>
-import checkbox from '@/components/Checkbox.vue';
+import checkbox from "@/components/Checkbox.vue";
+import radioButton from "@/components/RadioButton.vue";
 
 export default {
   name: "master-list",
   components: {
-    checkbox
+    checkbox,
+    radioButton
+  },
+  data: function() {
+    return {
+      filter: "all"
+    };
   },
   pokemonList: {},
   computed: {
     pokemonList() {
-      return this.$root.$data.getPokemon();
+      if (this.filter === "caught")
+        return this.$root.$data.getPokemon().filter(pokémon => {
+          return pokémon.caught;
+        });
+      else if (this.filter === "uncaught")
+        return this.$root.$data.getPokemon().filter(pokémon => {
+          return !pokémon.caught;
+        });
+      else return this.$root.$data.getPokemon();
     }
   },
   methods: {
     updateCaught(id) {
       this.$root.$data.updateCaughtStatus(id);
+    },
+    updateFilter(newFilter) {
+      this.filter = newFilter;
     }
   }
 };
@@ -51,6 +84,16 @@ export default {
   max-width: 900px;
   margin: auto;
   margin-bottom: 75px;
+}
+
+.filter-options {
+  display: flex;
+  font-size: 1.1em;
+}
+
+.filter-options p,
+.filter-options .button {
+  margin-right: 1em;
 }
 
 .card {
@@ -74,7 +117,7 @@ export default {
 }
 
 .card-title {
-  font-family: 'Spectral', serif;
+  font-family: "Spectral", serif;
   font-size: 1.75em;
   margin-top: 0.25em;
   font-weight: 600;

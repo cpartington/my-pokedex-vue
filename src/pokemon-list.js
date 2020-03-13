@@ -3168,7 +3168,7 @@ let pokemon_list = [
   }, 
   {
     "name": "Clefairy", 
-    "caught": false, 
+    "caught": true, 
     "gen_id": 35, 
     "img_src": "https://www.serebii.net/swordshield/pokemon/035.png", 
     "type": [
@@ -4136,7 +4136,7 @@ let pokemon_list = [
   }, 
   {
     "name": "Aegislash", 
-    "caught": false, 
+    "caught": true, 
     "gen_id": 681, 
     "img_src": "https://www.serebii.net/swordshield/pokemon/681.png", 
     "type": [
