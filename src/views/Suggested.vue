@@ -78,6 +78,12 @@ h2 {
   text-align: center;
 }
 
+.suggested {
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 75px;
+}
+
 .image-card-pair-container {
   display: flex;
   flex-wrap: wrap;

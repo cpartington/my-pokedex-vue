@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Suggested from "../views/Suggested.vue";
 import About from "../views/About.vue";
+import MasterList from "../views/MasterList.vue";
 
 Vue.use(VueRouter);
 
@@ -21,6 +22,11 @@ const routes = [
     path: "/suggested",
     name: "Suggested",
     component: Suggested
+  },
+  {
+    path: "/master-list",
+    name: "Master List",
+    component: MasterList
   }
 ];
 

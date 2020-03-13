@@ -2,24 +2,29 @@
 <div id="app">
   <div class="header-bar">
     <div class="header-content">
-      <h1>My Pokédex</h1>
+      <h1 v-if="this.$route.name != 'Home'">My Pokédex</h1>
       <div id="nav">
         <router-link to="/">Home</router-link> |
+        <router-link to="/master-list">Master List</router-link> |
         <router-link to="/suggested">Suggested</router-link> |
         <router-link to="/about">About</router-link>
       </div>
     </div>
   </div>
-  <div class="content">
-    <router-view />
-  </div>
+  <router-view />
   <div class="footer">
     <p>
-      <a href="https://github.com/cpartington/my-pokedex" target="blank">Github Repository</a>
+      <a href="https://github.com/cpartington/my-pokedex-vue" target="blank">Github Repository</a>
     </p>
   </div>
 </div>
 </template>
+
+<script>
+export default {
+  name: "app"
+};
+</script>
 
 <style>
 * {
@@ -28,7 +33,7 @@
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   color: #414141;
 }
@@ -36,7 +41,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: 'Spectral', serif;
+  font-family: "Spectral", serif;
   font-weight: normal;
 }
 
@@ -63,7 +68,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 850px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -74,6 +79,10 @@ a:hover {
 
 .header-content a {
   font-size: 1.1em;
+}
+
+#nav {
+  margin-left: auto;
 }
 
 #nav a {
@@ -116,7 +125,7 @@ a:hover {
 
 .footer p {
   font-size: 0.9em;
-  font-family: 'Spectral', serif;
+  font-family: "Spectral", serif;
   margin: 0;
 }
 
@@ -130,12 +139,6 @@ a:hover {
 
 /* Desktop */
 @media only screen and (min-width: 451px) {
-  .content {
-    max-width: 900px;
-    margin: auto;
-    margin-bottom: 75px;
-  }
-
   .footer {
     position: fixed;
     bottom: 0;
