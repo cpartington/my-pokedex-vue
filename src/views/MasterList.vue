@@ -19,7 +19,12 @@
     ></radioButton>
   </div>
 
-  <div v-for="(pokémon, index) in pokemonList" :key="pokémon.ss_id">
+  <div class="search">
+    <i class="material-icons">search</i>
+    <input type="text" placeholder="Search for a pokémon..." v-model="searchText" />
+  </div>
+
+  <div v-for="(pokémon, index) in searchedPokemon" :key="pokémon.ss_id">
     <div class="card">
       <div class="card-content">
         <div class="card-header">
@@ -51,7 +56,8 @@ export default {
   },
   data: function() {
     return {
-      filter: "all"
+      filter: "all",
+      searchText: ""
     };
   },
   pokemonList: {},
@@ -66,6 +72,11 @@ export default {
           return !pokémon.caught;
         });
       else return this.$root.$data.getPokemon();
+    },
+    searchedPokemon() {
+      return this.pokemonList.filter(
+        pokémon => pokémon.name.toLowerCase().search(this.searchText) >= 0
+      );
     }
   },
   methods: {
@@ -94,6 +105,27 @@ export default {
 .filter-options p,
 .filter-options .button {
   margin-right: 1em;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.75em;
+}
+
+.search i {
+  margin-right: 7px;
+}
+
+.search input {
+  font-size: 1.2em;
+  height: 40px;
+  flex: 1;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  box-shadow: none !important;
+  padding-left: 10px;
 }
 
 .card {

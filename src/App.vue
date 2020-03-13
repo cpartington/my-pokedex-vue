@@ -30,10 +30,10 @@ export default {
 * {
   margin: 0px;
   padding: 0px;
+  font-family: "Lato", sans-serif;
 }
 
 body {
-  font-family: "Lato", sans-serif;
   font-size: 16px;
   color: #414141;
 }
