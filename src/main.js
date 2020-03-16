@@ -20,7 +20,6 @@ let data = function () {
     },
     getCaughtEvolution(id) {
       let evolvesToIds = this.getPokemonById(id).evolves_to;
-      console.log(typeof evolvesToIds);
       
       if (typeof evolvesToIds === 'number') {
         if (this.getPokemonById(evolvesToIds).caught)
