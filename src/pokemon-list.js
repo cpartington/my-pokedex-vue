@@ -1350,7 +1350,7 @@ let pokemon_list = [
   }, 
   {
     "name": "Hitmonchan", 
-    "caught": false, 
+    "caught": true, 
     "gen_id": 107, 
     "img_src": "https://www.serebii.net/swordshield/pokemon/107.png", 
     "type": [
@@ -1970,7 +1970,7 @@ let pokemon_list = [
   }, 
   {
     "name": "Sizzlipede", 
-    "caught": false, 
+    "caught": true, 
     "gen_id": 850, 
     "img_src": "https://www.serebii.net/swordshield/pokemon/850.png", 
     "type": [
@@ -2038,7 +2038,7 @@ let pokemon_list = [
     "gen_id": 50, 
     "img_src": "https://www.serebii.net/swordshield/pokemon/050.png", 
     "type": [
-      "diglett"
+      "ground"
     ], 
     "ss_id": 164,
     "evolves_from": null,
@@ -2050,7 +2050,8 @@ let pokemon_list = [
     "gen_id": 51, 
     "img_src": "https://www.serebii.net/swordshield/pokemon/051.png", 
     "type": [
-      "dugtrio"
+      "ground",
+      "steel"
     ], 
     "ss_id": 165,
     "evolves_from": 164,
@@ -2087,7 +2088,7 @@ let pokemon_list = [
     "gen_id": 524, 
     "img_src": "https://www.serebii.net/swordshield/pokemon/524.png", 
     "type": [
-      "rock\ufffd"
+      "rock"
     ], 
     "ss_id": 168,
     "evolves_from": null,
@@ -2168,7 +2169,7 @@ let pokemon_list = [
   }, 
   {
     "name": "Swoobat", 
-    "caught": false, 
+    "caught": true, 
     "gen_id": 528, 
     "img_src": "https://www.serebii.net/swordshield/pokemon/528.png", 
     "type": [
@@ -2539,7 +2540,7 @@ let pokemon_list = [
   }, 
   {
     "name": "Applin", 
-    "caught": false, 
+    "caught": true, 
     "gen_id": 840, 
     "img_src": "https://www.serebii.net/swordshield/pokemon/840.png", 
     "type": [
@@ -2590,7 +2591,7 @@ let pokemon_list = [
   }, 
   {
     "name": "Meowstic", 
-    "caught": false, 
+    "caught": true, 
     "gen_id": 678, 
     "img_src": "https://www.serebii.net/swordshield/pokemon/678.png", 
     "type": [
@@ -2879,7 +2880,7 @@ let pokemon_list = [
   }, 
   {
     "name": "Wimpod", 
-    "caught": false, 
+    "caught": true, 
     "gen_id": 767, 
     "img_src": "https://www.serebii.net/swordshield/pokemon/767.png", 
     "type": [
@@ -2905,7 +2906,7 @@ let pokemon_list = [
   }, 
   {
     "name": "Binacle", 
-    "caught": false, 
+    "caught": true, 
     "gen_id": 688, 
     "img_src": "https://www.serebii.net/swordshield/pokemon/688.png", 
     "type": [
@@ -2994,7 +2995,7 @@ let pokemon_list = [
   }, 
   {
     "name": "Hatenna", 
-    "caught": false, 
+    "caught": true, 
     "gen_id": 856, 
     "img_src": "https://www.serebii.net/swordshield/pokemon/856.png", 
     "type": [
@@ -3057,7 +3058,7 @@ let pokemon_list = [
   }, 
   {
     "name": "Pawniard", 
-    "caught": false, 
+    "caught": true, 
     "gen_id": 624, 
     "img_src": "https://www.serebii.net/swordshield/pokemon/624.png", 
     "type": [
@@ -3319,7 +3320,7 @@ let pokemon_list = [
   }, 
   {
     "name": "Gothita", 
-    "caught": false, 
+    "caught": true, 
     "gen_id": 574, 
     "img_src": "https://www.serebii.net/swordshield/pokemon/574.png", 
     "type": [
@@ -3566,7 +3567,7 @@ let pokemon_list = [
   }, 
   {
     "name": "Litwick", 
-    "caught": false, 
+    "caught": true, 
     "gen_id": 607, 
     "img_src": "https://www.serebii.net/swordshield/pokemon/607.png", 
     "type": [
@@ -3670,7 +3671,7 @@ let pokemon_list = [
   }, 
   {
     "name": "Mawile", 
-    "caught": false, 
+    "caught": true, 
     "gen_id": 303, 
     "img_src": "https://www.serebii.net/swordshield/pokemon/303.png", 
     "type": [
@@ -3947,7 +3948,7 @@ let pokemon_list = [
   }, 
   {
     "name": "Heatmor", 
-    "caught": false, 
+    "caught": true, 
     "gen_id": 631, 
     "img_src": "https://www.serebii.net/swordshield/pokemon/631.png", 
     "type": [
@@ -4211,7 +4212,7 @@ let pokemon_list = [
   }, 
   {
     "name": "Phantump", 
-    "caught": false, 
+    "caught": true, 
     "gen_id": 708, 
     "img_src": "https://www.serebii.net/swordshield/pokemon/708.png", 
     "type": [
@@ -4276,7 +4277,7 @@ let pokemon_list = [
   }, 
   {
     "name": "Passimian", 
-    "caught": false, 
+    "caught": true, 
     "gen_id": 766, 
     "img_src": "https://www.serebii.net/swordshield/pokemon/766.png", 
     "type": [
@@ -4339,7 +4340,7 @@ let pokemon_list = [
   }, 
   {
     "name": "Togedemaru", 
-    "caught": false, 
+    "caught": true, 
     "gen_id": 777, 
     "img_src": "https://www.serebii.net/swordshield/pokemon/777.png", 
     "type": [
