@@ -19,6 +19,28 @@
     ></radioButton>
   </div>
 
+  <div class="type-options">
+    <p>
+      <img class="pokémon-type-img" :class="[{ 'selected-type': activeTypes.bug }, 'nonselected-type']" src="/assets/types/bug.gif" v-on:click="updateActive('bug')" />
+      <img class="pokémon-type-img" :class="[{ 'selected-type': activeTypes.dark }, 'nonselected-type']" src="/assets/types/dark.gif" v-on:click="updateActive('dark')" />
+      <img class="pokémon-type-img" :class="[{ 'selected-type': activeTypes.dragon }, 'nonselected-type']" src="/assets/types/dragon.gif" v-on:click="updateActive('dragon')" />
+      <img class="pokémon-type-img" :class="[{ 'selected-type': activeTypes.electric }, 'nonselected-type']" src="/assets/types/electric.gif" v-on:click="updateActive('electric')" />
+      <img class="pokémon-type-img" :class="[{ 'selected-type': activeTypes.fairy }, 'nonselected-type']" src="/assets/types/fairy.gif" v-on:click="updateActive('fairy')" />
+      <img class="pokémon-type-img" :class="[{ 'selected-type': activeTypes.fighting }, 'nonselected-type']" src="/assets/types/fighting.gif" v-on:click="updateActive('fighting')" />
+      <img class="pokémon-type-img" :class="[{ 'selected-type': activeTypes.fire }, 'nonselected-type']" src="/assets/types/fire.gif" v-on:click="updateActive('fire')" />
+      <img class="pokémon-type-img" :class="[{ 'selected-type': activeTypes.flying }, 'nonselected-type']" src="/assets/types/flying.gif" v-on:click="updateActive('flying')" />
+      <img class="pokémon-type-img" :class="[{ 'selected-type': activeTypes.ghost }, 'nonselected-type']" src="/assets/types/ghost.gif" v-on:click="updateActive('ghost')" />
+      <img class="pokémon-type-img" :class="[{ 'selected-type': activeTypes.ground }, 'nonselected-type']" src="/assets/types/ground.gif" v-on:click="updateActive('ground')" />
+      <img class="pokémon-type-img" :class="[{ 'selected-type': activeTypes.ice }, 'nonselected-type']" src="/assets/types/ice.gif" v-on:click="updateActive('ice')" />
+      <img class="pokémon-type-img" :class="[{ 'selected-type': activeTypes.normal }, 'nonselected-type']" src="/assets/types/normal.gif" v-on:click="updateActive('normal')" />
+      <img class="pokémon-type-img" :class="[{ 'selected-type': activeTypes.poison }, 'nonselected-type']" src="/assets/types/poison.gif" v-on:click="updateActive('poison')" />
+      <img class="pokémon-type-img" :class="[{ 'selected-type': activeTypes.psychic }, 'nonselected-type']" src="/assets/types/psychic.gif" v-on:click="updateActive('psychic')" />
+      <img class="pokémon-type-img" :class="[{ 'selected-type': activeTypes.rock }, 'nonselected-type']" src="/assets/types/rock.gif" v-on:click="updateActive('rock')" />
+      <img class="pokémon-type-img" :class="[{ 'selected-type': activeTypes.steel }, 'nonselected-type']" src="/assets/types/steel.gif" v-on:click="updateActive('steel')" />
+      <img class="pokémon-type-img" :class="[{ 'selected-type': activeTypes.water }, 'nonselected-type']" src="/assets/types/water.gif" v-on:click="updateActive('water')" />
+    </p>
+  </div>
+
   <div class="search">
     <i class="material-icons">search</i>
     <input type="text" placeholder="Search for a pokémon..." v-model="searchText" />
@@ -30,6 +52,14 @@
         <div class="card-header">
           <p class="card-number">#{{ pokémon.ss_id.toString().padStart(3, '0') }}</p>
           <p class="card-title">{{ pokémon.name }}</p>
+          <p class="pokémon-type-container">
+            <img class="pokémon-type-img" :src="`/assets/types/${pokémon.type[0]}.gif`" />
+            <img
+              class="pokémon-type-img"
+              v-if="pokémon.type.length > 1"
+              :src="`/assets/types/${pokémon.type[1]}.gif`"
+            />
+          </p>
         </div>
         <div class="card-text">
           <checkbox :caught="pokémon.caught" v-on:change="updateCaught(index)"></checkbox>
@@ -57,12 +87,32 @@ export default {
   data: function() {
     return {
       filter: "all",
-      searchText: ""
+      searchText: "",
+      activeTypes: {
+        bug: false,
+        dark: false,
+        dragon: false,
+        electric: false,
+        fairy: false,
+        fighting: false,
+        fire: false,
+        flying: false,
+        ghost: false,
+        grass: false,
+        ground: false,
+        ice: false,
+        normal: false,
+        poison: false,
+        psychic: false,
+        rock: false,
+        steel: false,
+        water: false
+      }
     };
   },
   pokemonList: {},
   computed: {
-    pokemonList() {
+    pokemonCaught() {
       if (this.filter === "caught")
         return this.$root.$data.getPokemon().filter(pokémon => {
           return pokémon.caught;
@@ -73,8 +123,19 @@ export default {
         });
       else return this.$root.$data.getPokemon();
     },
+    pokemonTypes() {
+      let activeTypes = Object.keys(this.activeTypes).filter((key) => this.activeTypes[key]);
+      if (activeTypes.length > 0) {
+        return this.pokemonCaught.filter(pokémon => {
+          // return pokémon.type.every(item => activeTypes.includes(item));
+          return activeTypes.every(item => pokémon.type.includes(item));
+        });
+      } else {
+        return this.pokemonCaught;
+      }
+    },
     searchedPokemon() {
-      return this.pokemonList.filter(
+      return this.pokemonTypes.filter(
         pokémon => pokémon.name.toLowerCase().search(this.searchText) >= 0
       );
     }
@@ -85,6 +146,9 @@ export default {
     },
     updateFilter(newFilter) {
       this.filter = newFilter;
+    },
+    updateActive(type) {
+      this.activeTypes[type] = !this.activeTypes[type];
     }
   }
 };
@@ -160,6 +224,24 @@ export default {
   flex-direction: column;
   justify-content: flex-end;
   height: 100%;
+}
+
+.pokémon-type-container {
+  margin-top: 5px;
+}
+
+.pokémon-type-img {
+  height: 15px;
+  margin-right: 5px;
+}
+
+.nonselected-type {
+  padding: 3px;
+}
+
+.selected-type {
+  padding: 1px;
+  border: 2px solid #858585;
 }
 
 /* Mobile */
