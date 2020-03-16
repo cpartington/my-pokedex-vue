@@ -3,15 +3,15 @@
     <h1 class="page-title">Suggested Pokémon</h1>
 
     <h2>Obtain by Evolving</h2>
-    <div class="image-card-pair-container">
+    <div class="card-pair-container">
       <div v-for="pair in evolvePokemon" :key=pair.canCatch.ss_id>
-        <div class="image-card-pair">
-          <div class="image-card">
+        <div class="card-pair">
+          <div class="card">
             <img :src="pair.alreadyCaught.img_src" />
             <p>{{ pair.alreadyCaught.name }}</p>
           </div>
           <i class="material-icons arrow">double_arrow</i>
-          <div class="image-card">
+          <div class="card">
             <img :src="pair.canCatch.img_src" />
             <p>{{ pair.canCatch.name }}</p>
           </div>
@@ -20,15 +20,15 @@
     </div>
 
     <h2>Obtain by Breeding</h2>
-    <div class="image-card-pair-container">
+    <div class="card-pair-container">
       <div v-for="pair in breedPokemon" :key=pair.canCatch.ss_id>
-        <div class="image-card-pair">
-          <div class="image-card">
+        <div class="card-pair">
+          <div class="card">
             <img :src="pair.alreadyCaught.img_src" />
             <p>{{ pair.alreadyCaught.name }}</p>
           </div>
           <i class="material-icons arrow">double_arrow</i>
-          <div class="image-card">
+          <div class="card">
             <img :src="pair.canCatch.img_src" />
             <p>{{ pair.canCatch.name }}</p>
           </div>
@@ -84,28 +84,23 @@ h2 {
   margin-bottom: 75px;
 }
 
-.image-card-pair-container {
+.card-pair-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.image-card-pair {
+.card-pair {
   display: flex;
   align-items: center;
 }
 
-.image-card {
-  margin-bottom: 1em;
-  padding: 16px;
-  border: 1px solid lightgrey;
-  border-radius: 5px;
-  box-shadow: 4px 4px 5px lightgrey;
+.card {
   text-align: center;
   font-size: 1.2em;
 }
 
-.image-card img {
+.card img {
   height: 140px;
 }
 

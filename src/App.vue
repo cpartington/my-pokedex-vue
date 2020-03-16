@@ -129,6 +129,15 @@ a:hover {
   margin: 0;
 }
 
+/* Base card */
+.card {
+  margin-bottom: 1em;
+  padding: 16px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  box-shadow: 4px 4px 5px lightgrey;
+}
+
 /* Mobile */
 @media only screen and (max-width: 450px) {
   .header-bar {

@@ -193,11 +193,6 @@ export default {
 }
 
 .card {
-  margin-bottom: 1em;
-  padding: 16px;
-  border: 1px solid lightgrey;
-  border-radius: 5px;
-  box-shadow: 4px 4px 5px lightgrey;
   display: flex;
   justify-content: space-between;
 }
