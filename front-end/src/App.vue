@@ -5,9 +5,12 @@
       <h1 v-if="this.$route.name != 'Home'">My Pokédex</h1>
       <div id="nav">
         <router-link to="/">Home</router-link> |
-        <router-link to="/master-list">Master List</router-link> |
-        <router-link to="/suggested">Suggested</router-link> |
+        <span v-show="user">
+          <router-link to="/master-list">Master List</router-link> |
+          <router-link to="/suggested" v-show="user">Suggested</router-link> |
+        </span>
         <router-link to="/about">About</router-link>
+        <span v-on:click="logout" v-show="user" id="logout">Logout</span>
       </div>
     </div>
   </div>
@@ -21,8 +24,34 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
-  name: "app"
+  name: "app",
+  async created() {
+    try {
+      let response = await axios.get('/api/users');
+      this.$root.$data.user = response.data.user;
+    } catch (error) {
+      this.$root.$data.user = null;
+    }
+  },
+  computed: {
+    user() {
+      return this.$root.$data.user;
+    }
+  },
+  methods: {
+    async logout() {
+      try {
+        await axios.delete("/api/users");
+        this.$root.$data.user = null;
+      } catch (error) {
+        this.$root.$data.user = null;
+      }
+      this.$router.push(this.$route.query.redirect || '/')
+    }
+  }
 };
 </script>
 
@@ -95,9 +124,14 @@ a:hover {
   /* color: #d19192; */
 }
 
-/* #nav a:not(:last-child) {
-  margin-right: 1em;
-} */
+#logout {
+  margin-left: 10px;
+  background-color: #c79293;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
 
 .content {
   margin: 10px;
