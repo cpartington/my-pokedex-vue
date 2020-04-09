@@ -60,7 +60,7 @@ router.put('/:id', validUser, async (req, res) => {
       user: req.user
     });
     let ss_id = req.params.id;
-    pokedex.caught[ss_id] = !pokedex.caught[ss_id];
+    pokedex.caught.set(ss_id, !pokedex.caught[ss_id]);
     await pokedex.save();
     return res.send({
       pokedex: pokedex.caught
