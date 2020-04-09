@@ -1,69 +1,121 @@
 <template>
-  <div class="suggested">
-    <h1 class="page-title">Suggested Pokémon</h1>
+<div class="suggested">
+  <h1 class="page-title">Suggested Pokémon</h1>
 
-    <h2>Obtain by Evolving</h2>
-    <div class="card-pair-container">
-      <div v-for="pair in evolvePokemon" :key=pair.canCatch.ss_id>
-        <div class="card-pair">
-          <div class="card">
-            <img :src="pair.alreadyCaught.img_src" />
-            <p>{{ pair.alreadyCaught.name }}</p>
-          </div>
-          <i class="material-icons arrow">double_arrow</i>
-          <div class="card">
-            <img :src="pair.canCatch.img_src" />
-            <p>{{ pair.canCatch.name }}</p>
-          </div>
+  <h2>Obtain by Evolving</h2>
+  <div class="card-pair-container">
+    <div v-for="pair in evolvePokemon" :key="pair.canCatch.ss_id">
+      <div class="card-pair">
+        <div class="card">
+          <img :src="pair.alreadyCaught.img_src" />
+          <p>{{ pair.alreadyCaught.name }}</p>
         </div>
-      </div>
-    </div>
-
-    <h2>Obtain by Breeding</h2>
-    <div class="card-pair-container">
-      <div v-for="pair in breedPokemon" :key=pair.canCatch.ss_id>
-        <div class="card-pair">
-          <div class="card">
-            <img :src="pair.alreadyCaught.img_src" />
-            <p>{{ pair.alreadyCaught.name }}</p>
-          </div>
-          <i class="material-icons arrow">double_arrow</i>
-          <div class="card">
-            <img :src="pair.canCatch.img_src" />
-            <p>{{ pair.canCatch.name }}</p>
-          </div>
+        <i class="material-icons arrow">double_arrow</i>
+        <div class="card">
+          <img :src="pair.canCatch.img_src" />
+          <p>{{ pair.canCatch.name }}</p>
         </div>
       </div>
     </div>
   </div>
+
+  <h2>Obtain by Breeding</h2>
+  <div class="card-pair-container">
+    <div v-for="pair in breedPokemon" :key="pair.canCatch.ss_id">
+      <div class="card-pair">
+        <div class="card">
+          <img :src="pair.alreadyCaught.img_src" />
+          <p>{{ pair.alreadyCaught.name }}</p>
+        </div>
+        <i class="material-icons arrow">double_arrow</i>
+        <div class="card">
+          <img :src="pair.canCatch.img_src" />
+          <p>{{ pair.canCatch.name }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: "suggested",
+  data: function() {
+    return {
+      pokemonList: [],
+      caughtStatus: []
+    };
+  },
+  async created() {
+    try {
+      let response = await axios.get("/api/users");
+      this.$root.$data.user = response.data.user;
+    } catch (error) {
+      this.$root.$data.user = null;
+      this.$router.push(this.$route.query.redirect || "/");
+    }
+    this.getPokemon();
+    this.getCaughtStatus();
+  },
   computed: {
     evolvePokemon() {
-      return this.$root.$data.getPokemon()
-        .filter(pokémon => {
-          return pokémon.caught === false && pokémon.evolves_from != null && this.$root.$data.getPokemonById(pokémon.evolves_from).caught === true;
-        }).map(pokémon => {
+      return this.pokemonList
+        .filter(pokemon => {
+          return (
+            !this.caughtStatus[pokemon.ss_id] &&
+            pokemon.evolves_from != null &&
+            this.caughtStatus[pokemon.evolves_from]
+          );
+        })
+        .map(pokemon => {
           return {
-            "alreadyCaught": this.$root.$data.getPokemonById(pokémon.evolves_from),
-            "canCatch": pokémon 
-          }
+            alreadyCaught: this.pokemonList[pokemon.evolves_from],
+            canCatch: pokemon
+          };
         });
     },
     breedPokemon() {
-      return this.$root.$data.getPokemon()
-        .filter(pokémon => {
-          return pokémon.caught === false && pokémon.evolves_to != null && this.$root.$data.getCaughtEvolution(pokémon.ss_id) != null;
-        }).map(pokémon => {
-          let existingId = this.$root.$data.getCaughtEvolution(pokémon.ss_id);
+      return this.pokemonList
+        .filter(pokemon => {
+          return (
+            !this.caughtStatus[pokemon.ss_id] &&
+            pokemon.evolves_to != null &&
+            this.getCaughtEvolution(pokemon) != null
+          );
+        })
+        .map(pokemon => {
+          let existingId = this.getCaughtEvolution(pokemon);
           return {
-            "alreadyCaught": this.$root.$data.getPokemonById(existingId),
-            "canCatch": pokémon 
-          }
+            alreadyCaught: this.pokemonList[existingId],
+            canCatch: pokemon
+          };
         });
+    }
+  },
+  methods: {
+    async getPokemon() {
+      try {
+        let response = await axios.get("/api/pokemon");
+        this.pokemonList = response.data.pokemon;
+      } catch (error) {
+        console.error(error);
+      }
+    },
+    async getCaughtStatus() {
+      try {
+        let response = await axios.get("/api/pokedex");
+        this.caughtStatus = response.data.pokedex;
+      } catch (error) {
+        console.error(error);
+      }
+    },
+    getCaughtEvolution(pokemon) {
+      for (const evolveId of pokemon.evolves_to) {
+        if (this.caughtStatus[evolveId]) return evolveId;
+      }
     }
   }
 };
