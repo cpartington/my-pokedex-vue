@@ -8,6 +8,7 @@ Vue.config.productionTip = false
 
 let data = function () {
   return {
+    user: null,
     pokemon_list,
     getPokemon() {
       return this.pokemon_list;
