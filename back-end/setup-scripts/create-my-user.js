@@ -2,8 +2,10 @@ const pokemon_data = require("./pokemon-list.js");
 const reader = require("readline-sync");
 const mongoose = require('mongoose');
 const users = require("../users.js");
+const pokedex = require("../pokedex.js");
 
 const User = users.model;
+const Pokedex = pokedex.model;
 const pokemon_list = pokemon_data.model;
 
 // Connect to Mongo
@@ -24,7 +26,7 @@ if (password === "") {
   process.exit();
 }
 
-// Create the user
+// Check that the user doesn't exist yet
 User.findOne({
   username: username
 }).then((user) => {
@@ -41,10 +43,15 @@ User.findOne({
   });
 
   // Build the pokédex 
+  newPokedex = Pokedex({
+    user: user,
+    caught: new Array(400).fill(false)
+  });
   try {
     for (let i = 0; i < pokemon_list.length; i++) {
-      user.caught[i] = pokemon_list[i].caught;
+      newPokedex.caught[i] = pokemon_list[i].caught;
     }
+    newPokedex.save();
   } catch (error) {
     console.log(error);
     process.exit();

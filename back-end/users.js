@@ -9,8 +9,7 @@ const router = express.Router();
 const userSchema = new mongoose.Schema({
   name: String,
   username: String,
-  password: String,
-  caught: Array
+  password: String
 });
 
 // Hook to salt & hash the password
@@ -104,8 +103,7 @@ router.post('/', async (req, res) => {
     const user = new User({
       name: req.body.name,
       username: req.body.username,
-      password: req.body.password,
-      caught: new Array(400)
+      password: req.body.password
     });
     await user.save();
     // Set user session info
