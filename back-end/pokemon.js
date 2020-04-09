@@ -25,7 +25,9 @@ const Pokemon = mongoose.model('Pokemon', pokemonSchema);
 // Get list of pokémon 
 router.get('/', validUser, async (req, res) => {
   try {
-    pokemon = await Pokemon.find();
+    pokemon = await Pokemon.find().sort({
+      ss_id: 1
+    });
     return res.send({
       pokemon: pokemon
     });

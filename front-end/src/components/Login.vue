@@ -47,7 +47,7 @@ export default {
     async register() {
       this.error = "";
       this.errorLogin = "";
-      if (!this.firstName || !this.lastName || !this.username || !this.password)
+      if (!this.name || !this.username || !this.password)
         return;
       try {
         let response = await axios.post("/api/users", {
@@ -56,6 +56,9 @@ export default {
           password: this.password
         });
         this.$root.$data.user = response.data.user;
+        await axios.post("/api/pokedex", {
+          user: this.$root.$data.user
+        });
       } catch (error) {
         this.error = error.response.data.message;
         this.$root.$data.user = null;
