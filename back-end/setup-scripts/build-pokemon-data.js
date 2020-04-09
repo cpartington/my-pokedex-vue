@@ -11,16 +11,28 @@ mongoose.connect('mongodb://localhost:27017/mypokedex', {
   useNewUrlParser: true
 });
 
+function convertEvolvesToList(ids) {
+  if (typeof ids === 'number') 
+    return [ids - 1];
+  else if (typeof ids == 'array')
+    return ids.map(id => id - 1);
+}
+
+function convertEvolvesFrom(id) {
+  if (typeof id === 'number')
+    return id - 1;
+}
+
 async function createPokemon(p) {
   try {
     let newPokemon = new Pokemon({
-      ss_id: p.ss_id,
+      ss_id: p.ss_id - 1,
       gen_id: p.gen_id,
       img_src: '/assets/pokemon/' + p.name.toLowerCase() + '.png',
       name: p.name,
       type: p.type,
-      evolves_from: p.evolves_from,
-      evolves_to: p.evolves_to
+      evolves_from: convertEvolvesFrom(p.evolves_from),
+      evolves_to: convertEvolvesToList(p.evolves_to)
     });
     await newPokemon.save();
   } catch (error) {
@@ -30,7 +42,6 @@ async function createPokemon(p) {
 }
 
 pokemon_list.forEach((p) => {
+  console.log(p.ss_id);
   createPokemon(p);
 });
-
-process.exit();

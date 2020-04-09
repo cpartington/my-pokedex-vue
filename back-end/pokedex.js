@@ -45,7 +45,7 @@ router.post('/', validUser, async (req, res) => {
   try {
     await pokedex.save();
     return res.send({
-      pokedex: pokedex
+      pokedex: pokedex.caught
     });
   } catch (error) {
     console.log(error);
@@ -63,7 +63,7 @@ router.put('/:id', validUser, async (req, res) => {
     pokedex.caught[ss_id] = !pokedex.caught[ss_id];
     await pokedex.save();
     return res.send({
-      pokedex: pokedex
+      pokedex: pokedex.caught
     });
   } catch (error) {
     console.log(error);
