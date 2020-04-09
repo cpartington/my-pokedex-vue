@@ -12,21 +12,11 @@
 import Login from "@/components/Login.vue";
 import Summary from "@/components/Summary.vue";
 
-import axios from "axios";
-
 export default {
   name: "home",
   components: {
     Login,
     Summary
-  },
-  async created() {
-    try {
-      let response = await axios.get('/api/users');
-      this.$root.$data.user = response.data.user;
-    } catch (error) {
-      this.$root.$data.user = null;
-    }
   },
   computed: {
     user() {

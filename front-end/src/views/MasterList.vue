@@ -46,28 +46,28 @@
     <input type="text" placeholder="Search for a pokémon..." v-model="searchText" />
   </div>
 
-  <div v-for="(pokémon, index) in searchedPokemon" :key="pokémon.ss_id">
+  <div v-for="pokemon in searchedPokemon" :key="pokemon.ss_id">
     <div class="card">
       <div class="card-content">
         <div class="card-header">
-          <p class="card-number">#{{ pokémon.ss_id.toString().padStart(3, '0') }}</p>
-          <p class="card-title">{{ pokémon.name }}</p>
-          <p class="pokémon-type-container">
-            <img class="pokémon-type-img" :src="`/assets/types/${pokémon.type[0]}.gif`" />
+          <p class="card-number">#{{ (pokemon.ss_id + 1).toString().padStart(3, '0') }}</p>
+          <p class="card-title">{{ pokemon.name }}</p>
+          <p class="pokemon-type-container">
+            <img class="pokemon-type-img" :src="`/assets/types/${pokemon.type[0]}.gif`" />
             <img
-              class="pokémon-type-img"
-              v-if="pokémon.type.length > 1"
-              :src="`/assets/types/${pokémon.type[1]}.gif`"
+              class="pokemon-type-img"
+              v-if="pokemon.type.length > 1"
+              :src="`/assets/types/${pokemon.type[1]}.gif`"
             />
           </p>
         </div>
         <div class="card-text">
-          <checkbox :caught="pokémon.caught" v-on:change="updateCaught(index)"></checkbox>
+          <checkbox :caught="caughtStatus[pokemon.ss_id]" v-on:change="updateCaught(pokemon.ss_id)"></checkbox>
         </div>
       </div>
 
       <div class="card-image">
-        <img class="card-image" :src="pokémon.img_src" :alt="pokémon.name" />
+        <img class="card-image" :src="pokemon.img_src" :alt="pokemon.name" />
       </div>
     </div>
   </div>
@@ -78,6 +78,8 @@
 import checkbox from "@/components/Checkbox.vue";
 import radioButton from "@/components/RadioButton.vue";
 
+import axios from "axios";
+
 export default {
   name: "master-list",
   components: {
@@ -86,6 +88,8 @@ export default {
   },
   data: function() {
     return {
+      pokemonList: [],
+      caughtStatus: [],
       filter: "all",
       searchText: "",
       activeTypes: {
@@ -110,25 +114,34 @@ export default {
       }
     };
   },
-  pokemonList: {},
+  async created() {
+    try {
+      let response = await axios.get('/api/users');
+      this.$root.$data.user = response.data.user;
+    } catch (error) {
+      this.$root.$data.user = null;
+      this.$router.push(this.$route.query.redirect || '/');
+    }
+    this.getPokemon();
+    this.getCaughtStatus();
+  },
   computed: {
     pokemonCaught() {
       if (this.filter === "caught")
-        return this.$root.$data.getPokemon().filter(pokémon => {
-          return pokémon.caught;
+        return this.pokemonList.filter(pokemon => {
+          return this.caughtStatus[pokemon.ss_id];
         });
       else if (this.filter === "uncaught")
-        return this.$root.$data.getPokemon().filter(pokémon => {
-          return !pokémon.caught;
+        return this.pokemonList.filter(pokemon => {
+          return !this.caughtStatus[pokemon.ss_id];
         });
-      else return this.$root.$data.getPokemon();
+      else return this.pokemonList;
     },
     pokemonTypes() {
       let activeTypes = Object.keys(this.activeTypes).filter((key) => this.activeTypes[key]);
       if (activeTypes.length > 0) {
-        return this.pokemonCaught.filter(pokémon => {
-          // return pokémon.type.every(item => activeTypes.includes(item));
-          return activeTypes.every(item => pokémon.type.includes(item));
+        return this.pokemonCaught.filter(pokemon => {
+          return activeTypes.every(item => pokemon.type.includes(item));
         });
       } else {
         return this.pokemonCaught;
@@ -136,13 +149,30 @@ export default {
     },
     searchedPokemon() {
       return this.pokemonTypes.filter(
-        pokémon => pokémon.name.toLowerCase().search(this.searchText) >= 0
+        pokemon => pokemon.name.toLowerCase().search(this.searchText) >= 0
       );
     }
   },
   methods: {
-    updateCaught(id) {
-      this.$root.$data.updateCaughtStatus(id);
+    async getPokemon() {
+      try {
+        let response = await axios.get("/api/pokemon");
+        this.pokemonList = response.data.pokemon;
+      } catch (error) {
+        console.error(error);
+      }
+    },
+    async getCaughtStatus() {
+      try {
+        let response = await axios.get("/api/pokedex");
+        this.caughtStatus = response.data.pokedex;
+      } catch (error) {
+        console.error(error);
+      }
+    },
+    async updateCaught(id) {
+      let response = await axios.put('/api/pokedex/' + id);
+      this.caughtStatus = response.data.pokedex;
     },
     updateFilter(newFilter) {
       this.filter = newFilter;
@@ -221,13 +251,14 @@ export default {
   height: 100%;
 }
 
-.pokémon-type-container {
+.pokemon-type-container {
   margin-top: 5px;
 }
 
-.pokémon-type-img {
+.pokemon-type-img {
   height: 15px;
   margin-right: 5px;
+  cursor: pointer;
 }
 
 .nonselected-type {

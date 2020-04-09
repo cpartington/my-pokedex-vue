@@ -49,7 +49,7 @@ export default {
       } catch (error) {
         this.$root.$data.user = null;
       }
-      this.$router.push(this.$route.query.redirect || '/')
+      this.$router.push(this.$route.query.redirect || '/');
     }
   }
 };
