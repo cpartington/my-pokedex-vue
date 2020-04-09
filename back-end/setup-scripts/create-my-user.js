@@ -34,35 +34,36 @@ User.findOne({
     console.log(username, "already exists.");
     process.exit();
   }
-}).then(() => {
-  // Create the user
-  let user = new User({
-    name: name,
-    username: username,
-    password: password
-  });
+});
 
-  // Build the pokédex 
-  newPokedex = Pokedex({
-    user: user,
-    caught: new Array(400).fill(false)
-  });
+async function createUser() {
   try {
+    // Create the user
+    let user = new User({
+      name: name,
+      username: username,
+      password: password
+    });
+
+    // Save the user
+    await user.save();
+
+    // Build the pokédex 
+    newPokedex = Pokedex({
+      user: user,
+      caught: new Array(400).fill(false)
+    });
     for (let i = 0; i < pokemon_list.length; i++) {
       newPokedex.caught[i] = pokemon_list[i].caught;
     }
-    newPokedex.save();
+
+    // Save the pokedex
+    await newPokedex.save();
+    console.log("User successfully created.")
+    process.exit();
   } catch (error) {
     console.log(error);
-    process.exit();
-  }
+  };
+}
 
-  // Save everything
-  user.save().then(() => {
-    console.log("OK, user", username, "created.");
-    process.exit();
-  });
-
-}).catch(error => {
-  console.log(error);
-});
+createUser();

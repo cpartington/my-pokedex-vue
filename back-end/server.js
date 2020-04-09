@@ -37,6 +37,6 @@ app.use("/api/pokemon", pokemon.routes);
 
 // Import the pokédex module and set up its API path
 const pokedex = require("./pokedex.js");
-app.use("/api/pokedex", pokemon.routes);
+app.use("/api/pokedex", pokedex.routes);
 
 app.listen(3000, () => console.log('Server listening on port 3000!'));
